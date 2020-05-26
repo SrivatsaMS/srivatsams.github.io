@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Life in a puzzling Universe.</title>
+    <link>https://srivatsams.github.io/categories/</link>
+    <description>Recent content in Categories on Life in a puzzling Universe.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Srivatsa Subramanya</copyright>
+    <lastBuildDate>Mon, 25 May 2020 15:01:32 -0700</lastBuildDate>
+    
+	<atom:link href="https://srivatsams.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development</title>
+      <link>https://srivatsams.github.io/categories/development/</link>
+      <pubDate>Mon, 25 May 2020 15:01:32 -0700</pubDate>
+      
+      <guid>https://srivatsams.github.io/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>https://srivatsams.github.io/categories/test/</link>
+      <pubDate>Mon, 25 May 2020 15:01:32 -0700</pubDate>
+      
+      <guid>https://srivatsams.github.io/categories/test/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

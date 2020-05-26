@@ -1,0 +1,2410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Srivatsa Subramanya ">
+<meta name="description" content="Razer Blade Advanced early 2019 macOS 10.14 Hackintosh Note: I&amp;rsquo;AM NOT RESPONSIBLE IF YOU MESS UP YOUR COMPUTER USING THIS GUIDE!
+Intro I have been using Apple hardware and software since 1996 for macOS has been the best OS to meet my needs. My first computer was a PowerBook 150. Since then, I used mostly Apple mobile solutions: PowerBook G3, PowerBook Titanium, bunch of MacBook Pro 13&amp;rdquo; and 15&amp;rdquo;. But, I&amp;rsquo;m really dissatisfied with the latest MacBook Pro 2017 as it has a useless keyboard with arrow keys designed for Tinker Bell and zero ability to upgrade up to 32Gb RAM back then in 2017." />
+<meta name="keywords" content="Blog, Science, Aerospace, Hackintosh, Razer Blade 15" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://srivatsams.github.io/blogs/clover_hackintosh_guide/" />
+
+
+    <title>
+        
+            Clover Hackintosh Guide :: Life in a puzzling Universe. 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Clover Hackintosh Guide">
+<meta itemprop="description" content="This is a post about hacmac">
+<meta itemprop="datePublished" content="2020-05-25T15:42:15-07:00" />
+<meta itemprop="dateModified" content="2020-05-25T15:42:15-07:00" />
+<meta itemprop="wordCount" content="8552">
+<meta itemprop="image" content="https://srivatsams.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="Hackintosh,Razer Blade 15," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://srivatsams.github.io/"/>
+
+<meta name="twitter:title" content="Clover Hackintosh Guide"/>
+<meta name="twitter:description" content="This is a post about hacmac"/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-05-25 15:42:15 -0700 MST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text"> SRIVATSA </span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://srivatsams.github.io/blogs/">Blogs</a></li><li><a href="https://srivatsams.github.io/tutorials/">Tutorials</a></li><li><a href="https://srivatsams.github.io/academics/">Academics</a></li><li><a href="https://srivatsams.github.io/about/">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://srivatsams.github.io/blogs/clover_hackintosh_guide/">Clover Hackintosh Guide</a></h2>
+
+            
+
+            <div class="post-content">
+                <h1 id="razer-blade-advanced-early-2019-macos-1014-hackintosh">Razer Blade Advanced early 2019 macOS 10.14 Hackintosh</h1>
+<p><strong>Note: I&rsquo;AM NOT RESPONSIBLE IF YOU MESS UP YOUR COMPUTER USING THIS GUIDE!</strong></p>
+<h2 id="intro">Intro</h2>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/About_Mac.png" alt="About this Mac"></p>
+<p>I have been using Apple hardware and software since 1996 for macOS has been the best OS to meet my needs. My first computer was a PowerBook 150. Since then, I used mostly Apple mobile solutions: PowerBook G3, PowerBook Titanium, bunch of MacBook Pro 13&rdquo; and 15&rdquo;.
+But, I&rsquo;m really dissatisfied with the latest MacBook Pro 2017 as it has a useless keyboard with arrow keys designed for Tinker Bell and zero ability to upgrade up to 32Gb RAM back then in 2017. Yes. I know. This is 100% Intel failure. Just like performance and thermal issues the Intel CPU had for the last 6 years. Intel just doesn’t care about the mobile CPU market anymore.</p>
+<p>So, finally, I made a decision to go to the dark side and to switch to the hackintosh notebook. After doing some research, I selected Razer Blade Advanced. This has, perhaps, the best combo of design (!), performance and upgradability.</p>
+<p><strong>Purpose</strong></p>
+<ul>
+<li>UNIX/Linux backend software development. C, Go, Python.</li>
+<li>ML development (requires CUDA and Nvidia GPU).</li>
+<li>Embedded software and hardware development (IoT).</li>
+<li>Cloud and DevOps.</li>
+<li>iOS and macOS development mostly for fun.</li>
+<li>Gaming maybe once per month. Usually 3A titles like
+<ul>
+<li><a href="https://tombraider.square-enix-games.com/en-gb">Tomb Rider</a></li>
+<li><a href="https://square-enix-games.com/en_US/games/deus-ex-mankind-divided/">Deus Ex</a></li>
+<li><a href="https://tomclancy-thedivision.ubisoft.com/game/en-us/home">Tom Clancy&rsquo;s The Division 1/2</a></li>
+<li><a href="https://www.ea.com/games/mass-effect">Mass Effect</a></li>
+<li><a href="https://eternity.obsidian.net">Pillars of Eternity</a></li>
+<li><a href="http://www.divinityoriginalsin.com">Divinity: Original Sin</a>, etc.</li>
+</ul>
+</li>
+</ul>
+<h2 id="hardware">Hardware</h2>
+<p><strong>Razer Blade Advanced early 2019</strong></p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="left">Spec</th>
+<th align="left">macOS 10.14 compatibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>Chipset</code></td>
+<td align="left">Mobile Intel HM370</td>
+<td align="left">No issues</td>
+</tr>
+<tr>
+<td align="right"><code>CPU</code></td>
+<td align="left">Intel Core i7-8750H processor, 6 Cores / 12 Threads, 2.2GHz / 4.1GHz, 9MB Cache</td>
+<td align="left">No issues</td>
+</tr>
+<tr>
+<td align="right"><code>Memory</code></td>
+<td align="left">16GB dual-channel DDR4-2667MHz, up to 64GB</td>
+<td align="left">No issues</td>
+</tr>
+<tr>
+<td align="right"><code>GPU</code></td>
+<td align="left">Intel UHD 630</td>
+<td align="left">No issues</td>
+</tr>
+<tr>
+<td align="right"><code>dGPU</code></td>
+<td align="left">Nvidia 2070 Max-Q (8GB GDDR6 VRAM)</td>
+<td align="left">Nvidia Drivers absent for Mojave. ACPI should be patched to disable dGPU</td>
+</tr>
+<tr>
+<td align="right"><code>Storage</code></td>
+<td align="left">Samsung PM981 256GB NVMe M.2</td>
+<td align="left">Incompatible firmware. You can try fix with <a href="https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t470s/downloads/ds119265">Lenovo NVMe Firmware Update Utility</a> but better to replace</td>
+</tr>
+<tr>
+<td align="right"><code>Screen</code></td>
+<td align="left">15.6&rdquo; Full HD 144Hz, 1920 x 1080 IPS</td>
+<td align="left">No issues</td>
+</tr>
+<tr>
+<td align="right"><code>Webcam</code></td>
+<td align="left">Windows Hello built-in IR HD webcam (1MP / 720P)</td>
+<td align="left">No issues. Windows Hello is not supported in macOS</td>
+</tr>
+<tr>
+<td align="right"><code>WiFi</code></td>
+<td align="left">Intel Wireless-AC 9560NGW</td>
+<td align="left">Drivers absent for macOS. Should replaced</td>
+</tr>
+<tr>
+<td align="right"><code>Input &amp; Output</code></td>
+<td align="left">USB 3.1 Gen 1 (USB-A) x3</td>
+<td align="left">No issues</td>
+</tr>
+<tr>
+<td align="right"></td>
+<td align="left">Thunderbolt 3 (USB-C)</td>
+<td align="left">No issues</td>
+</tr>
+<tr>
+<td align="right"></td>
+<td align="left">HDMI 2.0B</td>
+<td align="left">HDMI connected directly to Nvidia GPU and will not work in macOS</td>
+</tr>
+<tr>
+<td align="right"></td>
+<td align="left">Mini DisplayPort 1.4</td>
+<td align="left">Mini DisplayPort connected directly to Nvidia GPU and will not work in macOS</td>
+</tr>
+<tr>
+<td align="right"><code>Soundboard</code></td>
+<td align="left">Realtek ALC298</td>
+<td align="left">No issues. ACPI patch should be added to solve sleep issue</td>
+</tr>
+<tr>
+<td align="right"><code>Battery</code></td>
+<td align="left">80Wh</td>
+<td align="left">About 3-5h after proper Power Management configuration.  ACPI should be patched to enable battery stats</td>
+</tr>
+<tr>
+<td align="right"><code>Keyboard</code></td>
+<td align="left">Per-key RGB powered by Razer Chroma N-Key rollover backlit</td>
+<td align="left">No issues. Razer Chroma software absent for macOS</td>
+</tr>
+<tr>
+<td align="right"><code>Touchpad</code></td>
+<td align="left">Precision Glass</td>
+<td align="left">No issues. ACPI should be patched to enable trackpad</td>
+</tr>
+<tr>
+<td align="right"><code>Dimensions</code></td>
+<td align="left">17.8mm x 235mm x 355mm</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="right"><code>Weight</code></td>
+<td align="left">2.21 kg</td>
+<td align="left">ACPI patches will not help with this. /sarcasm</td>
+</tr>
+<tr>
+<td align="right"><code>Power</code></td>
+<td align="left">230W power adapter</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="hardware-upgrades-and-tools">Hardware Upgrades and Tools</h2>
+<p>The bundled <code>WiFI</code> and <code>NVMe</code> is not compatible with macOS and should be replaced. Please find below the recommended replacement parts, already tested for compatibility. Usually I need to deploy for testing 4-5 node Kubernetes cluster with at least 4Gb per node. So 32GB is a necessary upgrade for me.</p>
+<p><strong>Accessories</strong></p>
+<table>
+<thead>
+<tr>
+<th align="right">Accessories</th>
+<th align="left">Description</th>
+<th align="left">Amazon URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>USB mouse</code></td>
+<td align="left">Trackpad will be unavailable during macOS installation procedure</td>
+<td align="left"><a href="https://www.amazon.com/AmazonBasics-3-Button-Wired-Mouse-Black/dp/B005EJH6RW/ref=sr_1_3?keywords=amazon+basic+mouse&amp;qid=1561714362&amp;s=gateway&amp;sr=8-3">Amazon</a></td>
+</tr>
+<tr>
+<td align="right"><code>USB storage</code> with at least 16Gb storage</td>
+<td align="left">Installation USB media</td>
+<td align="left"><a href="https://www.amazon.com/gp/product/B076GXJJRD/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&amp;psc=1">Amazon</a></td>
+</tr>
+<tr>
+<td align="right"><code>USB-A to USB-C cable</code></td>
+<td align="left">For USB ports detection procedure</td>
+<td align="left"><a href="https://www.amazon.com/AmazonBasics-Type-C-Gen1-Female-Adapter/dp/B01GGKYXVE/ref=pd_hpb_a2a_sims_6/130-2479265-2893400?_encoding=UTF8&amp;pd_rd_i=B01GGKYYT0&amp;pd_rd_r=54b9f737-919c-11e9-b9d7-6915ce2a8dc3&amp;pd_rd_w=j9bw6&amp;pd_rd_wg=IVvh1&amp;pf_rd_p=bfc589eb-d865-496f-a10b-5e00902c2113&amp;pf_rd_r=G68JVK6HBAFKEDA75MYY&amp;refRID=G68JVK6HBAFKEDA75MYY&amp;th=1">Amazon</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>WiFi</strong></p>
+<table>
+<thead>
+<tr>
+<th align="right">WiFi module</th>
+<th align="left">Description</th>
+<th align="left">eBay or AliExpress URL</th>
+<th align="left">Confirmation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>BCM94352Z (DW-1560)</code></td>
+<td align="left">Recommended. 2 antennas. No issues. Additional kext&rsquo;s are required. Easily to find for $24-60 on</td>
+<td align="left"><a href="https://www.ebay.com/sch/i.html?_from=R40&amp;_nkw=BCM94352Z+DW-1560&amp;_sacat=0&amp;rt=nc&amp;LH_BIN=1">eBay</a></td>
+<td align="left"><a href="https://osxlatitude.com/forums/topic/11138-inventory-of-supportedunsupported-wireless-cards-2-sierra-catalina/">community</a></td>
+</tr>
+<tr>
+<td align="right"><code>BCM943602BAED (DW-1830)</code></td>
+<td align="left">3 antennas. RBA have only 2. Works out of the box. About $60-120 on AliExpress</td>
+<td align="left"><a href="https://www.aliexpress.com/wholesale?catId=0&amp;initiative_id=SB_20190707194727&amp;SearchText=BCM943602BAED+DW1830&amp;switch_new_app=y">AliExpress</a></td>
+<td align="left"><a href="https://osxlatitude.com/forums/topic/11138-inventory-of-supportedunsupported-wireless-cards-2-sierra-catalina/">community</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Storage</strong></p>
+<table>
+<thead>
+<tr>
+<th align="right">NVMe</th>
+<th align="left">4k Support</th>
+<th align="left">Amazon URL</th>
+<th align="left">Confirmation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>Samsung EVO 970 NVMe</code></td>
+<td align="left">NO</td>
+<td align="left"><a href="https://www.amazon.com/gp/product/B07DB942BT/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&amp;psc=1">Amazon</a></td>
+<td align="left"><a href="https://www.tonymacx86.com">community</a></td>
+</tr>
+<tr>
+<td align="right"><code>Samsung EVO 970 Pro NVMe</code></td>
+<td align="left">NO</td>
+<td align="left"><a href="https://www.amazon.com/Samsung-PCI-Express-Solid-State-V-NAND/dp/B07DFJ3YQR/ref=sr_1_4?keywords=Samsung+970+EVO+Pro&amp;qid=1560233808&amp;s=electronics&amp;sr=1-4">Amazon</a></td>
+<td align="left"><a href="https://www.tonymacx86.com">community</a></td>
+</tr>
+<tr>
+<td align="right"><code>Samsung EVO 970 Plus NVMe</code></td>
+<td align="left">NO</td>
+<td align="left"><a href="https://www.amazon.com/Samsung-970-EVO-Plus-MZ-V7S1T0B/dp/B07MFZY2F2/ref=sr_1_3?keywords=Samsung+EVO+970+Plus+NVMe&amp;qid=1561343834&amp;s=gateway&amp;sr=8-3">Amazon</a></td>
+<td align="left"><a href="https://www.tonymacx86.com/threads/do-the-samsung-970-evo-plus-drives-work-new-firmware-available-for-testing-5-20-19.270757/page-13#post-1959914">Do the Samsung 970 Evo Plus drives work ? New Firmware Available for testing 5/20/19</a></td>
+</tr>
+<tr>
+<td align="right"><code>Sabrent Rocket NVMe</code></td>
+<td align="left">YES</td>
+<td align="left"><a href="https://www.amazon.com/gp/product/B07LGF54XR/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&amp;psc=1">Amazon</a></td>
+<td align="left"><a href="https://www.tonymacx86.com/members/stonevil.254235/">stonevil</a></td>
+</tr>
+<tr>
+<td align="right"><code>WD Black SN750 NVMe</code></td>
+<td align="left">-</td>
+<td align="left"><a href="https://www.amazon.com/BLACK-SN750-500GB-Internal-Gaming/dp/B07MQ468S8/ref=sxin_3_ac_d_rm?keywords=wd%2Bblack%2Bnvme&amp;pd_rd_i=B07MH2P5ZD&amp;pd_rd_r=0be71a8a-a79d-4ce3-ad47-102a5ee16a25&amp;pd_rd_w=9ZCWD&amp;pd_rd_wg=dlFxu&amp;pf_rd_p=0bc35c17-1e0d-4808-b361-20ab11b00973&amp;pf_rd_r=0CKT4MYE9A5QZ8AJYEVK&amp;qid=1560233421&amp;s=gateway&amp;th=1">Amazon</a></td>
+<td align="left"><a href="https://www.tonymacx86.com">community</a></td>
+</tr>
+<tr>
+<td align="right"><code>HP EX900 M.2 NVMe</code></td>
+<td align="left">-</td>
+<td align="left"><a href="https://www.amazon.com/HP-EX900-Internal-Solid-5Xm46Aa/dp/B07MFBNMF1/ref=sr_1_3?keywords=HP+EX900+NVME+1TB+drive&amp;qid=1561283379&amp;s=gateway&amp;sr=8-3">Amazon</a></td>
+<td align="left"><a href="https://www.tonymacx86.com/members/konohasaint.88998/">konohasaint</a></td>
+</tr>
+<tr>
+<td align="right"><code>Samsung PM981</code></td>
+<td align="left">NO</td>
+<td align="left">Bundled with Razer Blade</td>
+<td align="left"><a href="https://www.tonymacx86.com/members/suyukai.2249983/">suyukai</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note: Bundled Samsung NVMe PM981 can be enabled with additional macOS Extension (kext) and (ACPI hot patch). More information in <code>suyukai</code> post <a href="https://www.tonymacx86.com/threads/guide-razer-blade-15-2018-detailed-install-guide-high-sierra-10-13-6-17g2208-17g5019.264017/page-65#post-1969367">I find a way to use macOS on SSD(pm981) in blade!&hellip;</a></strong></p>
+<p>macOS have native support and works better with 4k blocks. Check <strong>NVMe format</strong>.
+Performance tested with <a href="https://apps.apple.com/us/app/blackmagic-disk-speed-test/id425264550?mt=12">Blackmagic Disk Speed Test</a>. Samsung EVO 970 1Tb NVMe and Sabrent Rocket 1Tb NMVe have the same Read/Write performance. But Samsung EVO stays about 8-12° C hotter on heave load. Even with additional passive cooling.</p>
+<p><strong>Note: I do recommend to use at least 1Tb NVMe for dual boot with Windows 10.</strong></p>
+<p><strong>RAM</strong></p>
+<table>
+<thead>
+<tr>
+<th align="right">Memory module</th>
+<th align="left">Modules size</th>
+<th align="left">Speed</th>
+<th align="left">CL</th>
+<th align="left">Amazon URL</th>
+<th align="left">Confirmation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>Ballistix Sport LT 32GB</code></td>
+<td align="left">2x16Gb</td>
+<td align="left">2666</td>
+<td align="left">CL16</td>
+<td align="left"><a href="https://www.amazon.com/gp/product/B06XRBS4Y5/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&amp;psc=1">Amazon</a></td>
+<td align="left"><a href="https://www.tonymacx86.com/members/stonevil.254235/">stonevil</a></td>
+</tr>
+<tr>
+<td align="right"><code>Kingston Technology HyperX Impact 32GB</code></td>
+<td align="left">2x16Gb</td>
+<td align="left">2666</td>
+<td align="left">CL15</td>
+<td align="left"><a href="https://www.amazon.com/dp/B01NAL3TYY/?coliid=I3Q9P4ZU9V435H&amp;colid=1ZGSQH2G88154&amp;psc=1&amp;ref_=lv_ov_lig_dp_it">Amazon</a></td>
+<td align="left"><a href="https://www.reddit.com/r/razer/comments/c1c9wl/razer_blade_15_advanced_ram_upgrade/">Razer Blade 15 Advanced RAM upgrade</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommended Upgrades</strong></p>
+<table>
+<thead>
+<tr>
+<th align="right">Accessories</th>
+<th align="left">Description</th>
+<th align="left">Amazon URL</th>
+<th align="left">Confirmation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>Advancing Gene NVMe M.2 Heatsink</code></td>
+<td align="left">Passive cooling for NVMe. Decreased temperature for about 10-12° C on heave load</td>
+<td align="left"><a href="https://www.amazon.com/gp/product/B074Y5DZ4N/ref=ppx_yo_dt_b_asin_title_o04_s01?ie=UTF8&amp;psc=1">Amazon</a></td>
+<td align="left"><a href="https://www.tonymacx86.com/members/stonevil.254235/">stonevil</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommended Tools</strong></p>
+<table>
+<thead>
+<tr>
+<th align="right">Tool</th>
+<th align="left">URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>iFixIt Pro Tech Toolkit</code></td>
+<td align="left"><a href="https://www.ifixit.com/Store/Tools/Pro-Tech-Toolkit/IF145-307?o=4">iFixIt</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>(Optional) Extreme Upgrade only for Advance Gamers</strong></p>
+<table>
+<thead>
+<tr>
+<th align="right">Accessories</th>
+<th align="left">Description</th>
+<th align="left">Amazon URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>Thermal Grizzly Conductonaut Thermal Grease Paste</code></td>
+<td align="left">Liquid metal thermal paste</td>
+<td align="left"><a href="https://www.amazon.com/gp/product/B01A9KIGSI/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&amp;psc=1">Amazon</a></td>
+</tr>
+<tr>
+<td align="right"><code>MG Chemicals 422B Silicone Modified Conformal Coating</code></td>
+<td align="left">Coating</td>
+<td align="left"><a href="https://www.amazon.com/gp/product/B008O9YIV6/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&amp;psc=1">Amazon</a></td>
+</tr>
+<tr>
+<td align="right"><code>3M Scotch Super 88 Vinyl Electrical Tape</code></td>
+<td align="left">Electrical tape</td>
+<td align="left"><a href="https://www.amazon.com/3M-Scotch-Electrical-Dielectric-Strength/dp/B001DPXGSE/ref=sr_1_2_sspa?ie=UTF8&amp;qid=1538036249&amp;sr=8-2-spons&amp;keywords=super+88&amp;psc=1">Amazon</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://www.anandtech.com/show/12670/the-samsung-970-evo-ssd-review/8">The Mainstream Phoenix Rises: Samsung&rsquo;s 970 EVO (500GB &amp; 1TB) SSDs Reviewed - Power Management Features</a></li>
+</ul>
+<h2 id="repository">Repository</h2>
+<p><code>BIOS_mod/</code> folder. This folder contains the latest RBA AMI BIOS mod with all the required unlocked options.</p>
+<p>This BIOS mod is actual only for Razer Blade Advanced early 2019 with</p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="left">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>System BIOS</code></td>
+<td align="left">1.05</td>
+</tr>
+<tr>
+<td align="right"><code>EC FW</code></td>
+<td align="left">1.03</td>
+</tr>
+<tr>
+<td align="right"><code>MCU FW</code></td>
+<td align="left">1.00.00.00</td>
+</tr>
+</tbody>
+</table>
+<p>Do not use this mod if your system is different! Please check with BIOS.</p>
+<p><code>BIOS_mod/Nvidia_2080_Max-Q_BIOS_mod/</code> this folder contains patches for 80w or 90w TDP for Nvidia 2080 Max-Q.</p>
+<p><code>EFI/</code> folder is basically a full copy of my EFI folder from EFI drive with a removed machine serial number.</p>
+<p>ACPI Patches</p>
+<ul>
+<li><code>EFI/CLOVER/ACPI/patched/DSDT.aml</code></li>
+<li><code>EFI/CLOVER/ACPI/patched/SSDT-12-OptTabl.aml</code></li>
+<li><code>EFI/CLOVER/ACPI/patched/SSDT-USBX.aml</code></li>
+</ul>
+<p>can be different for your computer.</p>
+<p><code>Extensions/</code> folder with all required macOS Extensions (kext&rsquo;s).</p>
+<p><code>Tools/</code> folder with various tools to flash BIOS, etc. macOS IORegistryExplorer v2.1 is included with this repository. This tool is necessary for debugging USB, etc. configuration.</p>
+<p><code>Tools/AMI/</code> is a folder with AMI BIOS flashing and modding tools.
+<code>Tools/Nvidia/</code> is a folder with Nvidia BIOS flashing tools.</p>
+<p><code>Development/ACPI_patches/</code> is a folder with uncompiled versions of the SSDT&rsquo;s created for various ACPI hot patches.</p>
+<p><code>Drivers/Windows/Apple USB Ethernet drivers for Windows</code> is a folder with Apple USB-A Ethernet drivers for Windows extracted from <code>Apple BootCamp</code>.</p>
+<h2 id="required-tools">Required Tools</h2>
+<table>
+<thead>
+<tr>
+<th align="right">Tool</th>
+<th align="left">Description</th>
+<th align="left">Download URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>balenaEtcher</code></td>
+<td align="left">a free and open-source utility used for burning image files such as .iso and .img files, as well as zipped folders to create live SD cards and USB flash drives.</td>
+<td align="left"><a href="https://www.balena.io/etcher/">balenaEtcher</a></td>
+</tr>
+<tr>
+<td align="right"><code>UniBeast</code></td>
+<td align="left">a tool for building macOS installation media</td>
+<td align="left"><a href="https://www.tonymacx86.com/resources/kextbeast-2-0-2.399/">UniBeast</a></td>
+</tr>
+<tr>
+<td align="right"><code>TINU</code></td>
+<td align="left">an alternative tool for building macOS installation media</td>
+<td align="left"><a href="https://github.com/ITzTravelInTime/TINU">TINU</a></td>
+</tr>
+<tr>
+<td align="right"><code>Clover Configurator</code></td>
+<td align="left">an easy to use macOS application designed to help you create custom configuration files for the Clover EFI bootloader via a streamlined graphical interface</td>
+<td align="left"><a href="https://mackie100projects.altervista.org/download-clover-configurator/">Clover Configurator</a></td>
+</tr>
+<tr>
+<td align="right"><code>KextBeast</code></td>
+<td align="left">a quick installer for .kext, .bundle, and .plugin files</td>
+<td align="left"><a href="https://www.tonymacx86.com/resources/kextbeast-2-0-2.399/">KextBeast</a></td>
+</tr>
+<tr>
+<td align="right"><code>Continuity Activation Tool</code></td>
+<td align="left">is a tool that makes the changes necessary to enable Continuity features on compatible hardware</td>
+<td align="left"><a href="https://github.com/dokterdok/Continuity-Activation-Tool">Continuity Activation Tool</a></td>
+</tr>
+<tr>
+<td align="right"><code>Kext Updater</code></td>
+<td align="left">this little tool is totally easy to have up-to-date kext&rsquo;s</td>
+<td align="left"><a href="https://www.insanelymac.com/forum/topic/334222-kext-updater-keep-your-kexts-fresh-with-only-one-click/">Kext Updater</a></td>
+</tr>
+<tr>
+<td align="right"><code>MaciASL</code></td>
+<td align="left">a native AML compiler and IDE for OS X, with syntax colouring, tree navigation, automated patching, online patch file repositories, and iASL binary updates, written entirely in Cocoa, conforms to OS X guidelines</td>
+<td align="left"><a href="https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/">MaciASL</a></td>
+</tr>
+<tr>
+<td align="right"><code>iasl</code></td>
+<td align="left">-//-</td>
+<td align="left"><a href="https://bitbucket.org/RehabMan/acpica/downloads/iasl.zip">iasl</a></td>
+</tr>
+<tr>
+<td align="right"><code>GenSMBIOS</code></td>
+<td align="left">a Py script that uses acidanthera&rsquo;s macserial to generate SMBIOS and optionally saves them to a plist</td>
+<td align="left"><a href="https://github.com/corpnewt/GenSMBIOS">GenSMBIOS Github Repository</a></td>
+</tr>
+<tr>
+<td align="right"><code>one-key-cpufriend</code></td>
+<td align="left">a script for modifying macOS CPU Performance</td>
+<td align="left"><a href="https://github.com/stevezhengshiqi/one-key-cpufriend">one-key-cpufriend Github Repository</a></td>
+</tr>
+<tr>
+<td align="right"><code>USBMap</code></td>
+<td align="left">a Py script for mapping out USB ports and creating a custom SSDT or injector kext (WIP)</td>
+<td align="left"><a href="https://github.com/corpnewt/USBMap">USBMap Github Repository</a></td>
+</tr>
+<tr>
+<td align="right"><code>Intel Power Gadget</code></td>
+<td align="left">a software-based power usage monitoring tool enabled for Intel Core processors</td>
+<td align="left"><a href="https://software.intel.com/en-us/articles/intel-power-gadget">Intel Power Gadget</a></td>
+</tr>
+<tr>
+<td align="right"><code>iStat Menus</code></td>
+<td align="left">an advanced Mac system monitor</td>
+<td align="left"><a href="https://bjango.com/mac/istatmenus/">iStat Menus</a></td>
+</tr>
+<tr>
+<td align="right"><code>Prime95</code></td>
+<td align="left">a free Mersenne Prime search tool. Maybe, the best tool for CPU torture testing</td>
+<td align="left"><a href="https://www.mersenne.org/download/">Prime95</a></td>
+</tr>
+<tr>
+<td align="right"><code>UNetbootin</code></td>
+<td align="left">this tool allows you to create bootable USB drives for Windows and Ubuntu and other Linux distributions without burning a CD.</td>
+<td align="left"><a href="https://unetbootin.github.io">UNetbootin</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="preparation">Preparation</h2>
+<h3 id="bios-update">BIOS update</h3>
+<p>It is very important to make all the updates for BIOS before starting any macOS deployment. ACPI sources will be different after BIOS update and this will require to dump ACPI sources and patch them again. And, that is not a pleasant task.</p>
+<p>Download BIOS, EC, ME, etc. Firmware and apply them from stock Windows partition.</p>
+<p><a href="http://drivers.razersupport.com//index.php?_m=downloads&amp;_a=view&amp;parentcategoryid=864&amp;pcid=860&amp;nav=0,350,860">Razer Hardware Drivers download URL</a></p>
+<ul>
+<li>Boot into Windows.</li>
+<li>Open <a href="http://drivers.razersupport.com//index.php?_m=downloads&amp;_a=view&amp;parentcategoryid=864&amp;pcid=860&amp;nav=0,350,860">Razer Hardware Drivers download URL</a> in preferred browser.</li>
+<li>Download the latest BIOS, EC, ME, etc. Firmware updates.</li>
+<li>Apply these updates in a required order. This is very important! Read documentation carefully.</li>
+</ul>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://support.razer.com">Razer Support Website</a></li>
+</ul>
+<h3 id="bios-unlock">BIOS unlock</h3>
+<p>Certain changes for the BIOS configuration should be done to make macOS bootable on the Razer Blade Advanced.</p>
+<ul>
+<li>Disable <code>VT-d</code>. Apple stopped supporting this long time ago and will not boot in some cases with enabled <code>VT-d</code>. Do not mistake <code>VT-d</code> for <code>VMX</code> or <code>VTX</code>.</li>
+<li>Increase memory pre-allocated for <code>DVMT</code>. Usually <code>DVMT</code> is pre-allocated for <code>32Mb</code>. MacOS requires <code>64Mb</code> minimum.</li>
+<li>Deactivate <code>CFG-Lock</code>. Required by macOS Power Management.</li>
+<li>Disable <code>Secure Boot</code>.</li>
+<li>etc.</li>
+</ul>
+<p>Some of these configurations can be fixed one or another way in <code>Clover</code> configuration file. But, it is better to play safe and change configuration in BIOS. Deactivation of the <code>CFG-Lock</code> can help a lot with power management.</p>
+<p>If the BIOS is upgraded to the latest version and</p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="left">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>System BIOS</code></td>
+<td align="left">1.05</td>
+</tr>
+<tr>
+<td align="right"><code>EC FW</code></td>
+<td align="left">1.03</td>
+</tr>
+<tr>
+<td align="right"><code>MCU FW</code></td>
+<td align="left">1.00.00.00</td>
+</tr>
+</tbody>
+</table>
+<p>it&rsquo;s safely to use already modded dump from <code>BIOS_mod/</code> folder and jump to <strong>BIOS flashing</strong>.</p>
+<p>Otherwise, follow the <strong>BIOS export</strong> step.</p>
+<h3 id="bios-export">BIOS export</h3>
+<ul>
+<li>Boot into Windows.</li>
+<li>Download this repository.</li>
+<li>Open <code>Tools\AMI\AfuWin64\</code> folder.</li>
+<li>Run <code>AFUWINGUIx64.EXE</code> application.</li>
+<li>In <code>AFUWINGUI</code> application click <code>Save</code> button to export current BIOS.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/AFUWINGUI_Save.png" alt="AFUWINGUI_Save"></p>
+<ul>
+<li>Save BIOS to <code>Desktop</code> folder.</li>
+<li>Close <code>AFUWINGUI</code> application.</li>
+</ul>
+<h3 id="bios-modding">BIOS modding</h3>
+<p>Most of the options are required for further undervolting and overclocking. But, some of them are necessary for the macOS. These options are marked with <strong>!</strong></p>
+<ul>
+<li>Open <code>Tools\AMI\AMIBCP64\</code> folder.</li>
+<li>Run <code>AMIBCP64.exe</code> application.</li>
+<li>In <code>AMIBCP</code> application click <code>Open</code>, navigate to <code>Desktop</code> and open BIOS saved in previous steps.</li>
+<li>In <code>AMIBCP</code> application
+<ul>
+<li>Unfold root folder in the left pane. This folder is blank and have no name.</li>
+<li>Unfold <code>Setup</code> subfolder.</li>
+<li>Click <code>Power &amp; Performance</code> subfolder.
+<ul>
+<li>In the right pane, change <code>Access/Use</code> from <code>Default</code> to <code>USER</code> for
+<ul>
+<li><code>Power &amp; Performance</code> (second row from top)</li>
+<li><code>CPU - Power Management Control</code> <strong>!</strong></li>
+<li><code>Intel(R) Speed Shift Technology</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Power_Performance.png" alt="Power_Performance"></p>
+<ul>
+<li>Unfold <code>CPU VR Settings</code></li>
+<li>Click <code> View/Configure CPU Lock Configuration</code> folder in the left pane</li>
+<li>In right the pane, change <code>Access/Use</code> from <code>Default</code> to <code>USER</code> for
+<ul>
+<li><code>CFG Lock</code></li>
+<li><code>Overclocking Lock</code></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/CPU_VR_Settings.png" alt="CPU_VR_Settings"></p>
+<ul>
+<li>Click <code>CPU - Power Management Control</code> folder in the left pane
+<ul>
+<li>In the right pane, change <code>Access/Use</code> from <code>Default</code> to <code>USER</code> for
+<ul>
+<li><code>CPU - Power Management Control</code> (second row from top) <strong>!</strong></li>
+<li><code>Intel(R) SpeedStep(tm)</code></li>
+<li><code>Intel(R) Speed Shift Technology</code></li>
+<li><code>C states</code></li>
+<li><code>Package C State Limit</code></li>
+<li><code>CPU Lock Configuration</code> (scroll way down) <strong>!</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/CPU_Power_Management_Control1.png" alt="CPU_Power_Management_Control1"></p>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/CPU_Power_Management_Control2.png" alt="CPU_Power_Management_Control2"></p>
+<ul>
+<li>Click <code>OverClocking Performance Menu</code> folder in the left pane
+<ul>
+<li>In the right pane, change <code>Access/Use</code> from <code>Default</code> to <code>USER</code> for
+<ul>
+<li><code>OverClocking Performance Menu</code> (second row from top)</li>
+<li><code>XTU Interface</code></li>
+<li><code>Processor</code></li>
+<li><code>Ring</code></li>
+<li><code>GT</code></li>
+<li><code>Uncore</code></li>
+<li><code>Memory</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/OverClocking_Performance_Menu.png" alt="OverClocking_Performance_Menu"></p>
+<ul>
+<li>Unfold <code>OverClocking Performance Menu</code> subfolder.</li>
+<li>Click <code>Processor</code> folder in the left pane
+<ul>
+<li>In the right pane, change <code>Access/Use</code> from <code>Default</code> to <code>USER</code> for
+<ul>
+<li><code>Processor</code> (second row from top)</li>
+<li><code>Core Voltage Offset</code></li>
+<li><code>Offset Prefix</code> below <code>Core Voltage Offset</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Processor.png" alt="Processor"></p>
+<ul>
+<li>Click <code>Ring</code> folder in the left pane
+<ul>
+<li>In the right pane, change <code>Access/Use</code> from <code>Default</code> to <code>USER</code> for
+<ul>
+<li><code>Ring</code> (second row from top)</li>
+<li><code>Ring Max OC Radio</code></li>
+<li><code>Ring Down Bin</code></li>
+<li><code>Min Ring Ratio Limit</code></li>
+<li><code>Max Ring Ratio Limit</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ring.png" alt="Ring"></p>
+<ul>
+<li>Click <code>GT</code> folder in the left pane
+<ul>
+<li>In the right pane, change <code>Access/Use</code> from <code>Default</code> to <code>USER</code> for
+<ul>
+<li><code>GT Domain</code> (second row from top)</li>
+<li><code>GT Voltage Offset</code></li>
+<li><code>Offset Prefix</code> below <code>GT Voltage Offset</code></li>
+<li><code>GTU Voltage Offset</code></li>
+<li><code>Offset Prefix</code> below <code>GTU Voltage Offset</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/GT.png" alt="GT"></p>
+<ul>
+<li>Click <code>Uncore</code> folder in the left pane
+<ul>
+<li>In the right pane, change <code>Access/Use</code> from <code>Default</code> to <code>USER</code> for
+<ul>
+<li><code>Uncore</code> (second row from top)</li>
+<li><code>Uncore Voltage Offset</code></li>
+<li><code>Offset Prefix</code> below <code>Uncore Voltage Offset</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Uncore.png" alt="Uncore"></p>
+<ul>
+<li>Click <code>Memory Overclocking Menu</code> folder in the left pane
+<ul>
+<li>In the right pane, change <code>Access/Use</code> from <code>Default</code> to <code>USER</code> for
+<ul>
+<li><code>Memory Profile</code> (second row from top) <strong>RAM XMP Profile</strong></li>
+<li><code>Memory Profile</code> (another one somewhere in the middle of the list) <strong>RAM XMP profile</strong></li>
+<li><code>Memory Reference Clock</code> <strong>RAM XMP Profile</strong></li>
+<li><code>Memory Ratio</code> <strong>RAM XMP Profile</strong></li>
+<li><code>Memory Voltage</code> <strong>RAM XMP Profile</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Memory_Overclocking_Menu1.png" alt="Memory_Overclocking_Menu1"></p>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Memory_Overclocking_Menu2.png" alt="Memory_Overclocking_Menu2"></p>
+<ul>
+<li>Click <code>Chipset</code> folder in the left pane
+<ul>
+<li>In the right pane, change <code>Access/Use</code> from <code>Default</code> to <code>USER</code> for
+<ul>
+<li><code>System Agent (SA) Configuration</code> (second row from top) <strong>!</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Chipset.png" alt="Chipset"></p>
+<ul>
+<li>Unfold <code>Chipset</code> subfolder.</li>
+<li>Click <code>System Agent (SA) Configuration</code> folder in the left pane
+<ul>
+<li>In the right pane, change <code>Access/Use</code> from <code>Default</code> to <code>USER</code> for
+<ul>
+<li><code>System Agent (SA) Configuration</code> (second row from top) <strong>!</strong></li>
+<li><code>VT-d</code> <strong>!</strong></li>
+<li><code>Graphics Configuration</code> <strong>!</strong></li>
+<li><code>PEG Port Configuration</code></li>
+<li><code>VT-d</code> (another one somewhere in the middle of the list) <strong>!</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/System_Agent_Configuration.png" alt="System_Agent_Configuration"></p>
+<ul>
+<li>Unfold <code>System Agent (SA) Configuration</code> folder in the left pane</li>
+<li>Click <code>Graphics Configuration</code> folder in the left pane
+<ul>
+<li>In the right pane, change <code>Access/Use</code> from <code>Default</code> to <code>USER</code> for
+<ul>
+<li><code>Graphics Configuration</code> (second row from top) <strong>!</strong></li>
+<li><code>Primary Display</code></li>
+<li><code>Internal Graphics</code></li>
+<li><code>DVMT Pre-Allocated</code> <strong>!</strong></li>
+<li><code>DVMT Total Gfx Mem</code> <strong>!</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Graphics_Configuration.png" alt="Graphics_Configuration"></p>
+<ul>
+<li>Click <code>PEG Port Configuration</code> folder in the left pane
+<ul>
+<li>In the right pane, change <code>Access/Use</code> from <code>Default</code> to <code>USER</code> for
+<ul>
+<li><code>PEG Port Configuration</code> (second row from top)</li>
+<li><code>ASPM</code></li>
+<li><code>ASPM L0s</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/PEG_Port_Configuration.png" alt="PEG_Port_Configuration"></p>
+<ul>
+<li>Click <code>Save As</code> in <code>AMIBCP</code> application.</li>
+<li>Save BIOS with new name to <code>Desktop</code> folder.</li>
+<li>Close <code>AMIBCP</code> application.</li>
+</ul>
+<h3 id="bios-flashing">BIOS flashing</h3>
+<ul>
+<li>Open <code>Tools\AMI\AfuWin64\</code> folder.</li>
+<li>Run <code>AFUWINGUIx64.EXE</code> application.</li>
+<li>In <code>AFUWINGUI</code> application click <code>Open</code> button.</li>
+<li>Choose new modded BIOS from <code>Desktop</code> folder.</li>
+<li>Close all application except <code>AFUWINGUI</code>. Close also all Windows TaskBar apps like Nvidia Expierence, Razer, etc.</li>
+<li>Click <code>Flash</code> button in <code>AFUWINGUI</code> application and confirm flashing BIOS.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/AFUWINGUI_Flash.png" alt="AFUWINGUI_Flash"></p>
+<ul>
+<li>Follow <code>AFUWINGUI</code> application on-screen instruction.</li>
+<li>Close <code>AFUWINGUI</code> application.</li>
+<li>Reboot Windows.</li>
+</ul>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=O5CvK7i9a_Y">Razer Blade 2017 Ultimate CPU GPU Optimization - Unleashed Performance - BIOS Unlock</a></li>
+</ul>
+<h3 id="bios-configuration">BIOS configuration</h3>
+<p>There are a few changes in the BIOS that are vital to make macOS happy and bootable on RBA. Undervolting and Overclocking are explained in the following chapter.</p>
+<ul>
+<li>Reboot computer.</li>
+<li>Repeatedly press <code>DEL</code> key to enter BIOS configuration menu.</li>
+<li>In BIOS navigate to menu
+<ul>
+<li><code>Advanced</code>
+<ul>
+<li><code>Power &amp; Performance</code>
+<ul>
+<li><code>CPU - Power Management Control</code>
+<ul>
+<li><code>CPU Lock Configuration</code>
+<ul>
+<li>Disable <code>CFG Lock</code></li>
+<li>Disable <code>Overclocking Lock</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Advanced</code>
+<ul>
+<li><code>Overclocking Performance Menu</code>
+<ul>
+<li>Disable <code>XTU Interface</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Advanced</code>
+<ul>
+<li><code>Thunderbolt(TM) Configuration</code>
+<ul>
+<li>Switch <code>Security Level</code> to <code>No Security</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Chipset</code>
+<ul>
+<li><code>System Agent (SA) Configuration</code>
+<ul>
+<li><code>Graphics Configuration</code>
+<ul>
+<li>Set <code>DVMT Pre-Allocated</code> to <code>64</code></li>
+<li>Set <code>DVMT Total Gfx Mem</code> to <code>MAX</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Chipset</code>
+<ul>
+<li><code>System Agent (SA) Configuration</code>
+<ul>
+<li>Disable <code>VT-d</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Chipset</code>
+<ul>
+<li><code>SATA And RST Configuration</code>
+<ul>
+<li>Check <code>SATA Mode Selection</code> set to <code>AHCI</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Security</code>
+<ul>
+<li>Set <code>Secure Boot</code> to <code>Disabled</code></li>
+</ul>
+</li>
+<li><code>Boot</code>
+<ul>
+<li>Set <code>Fast Boot</code> to <code>Disabled</code></li>
+<li><code>CSM Configuration</code>
+<ul>
+<li>Set <code>CSM Support</code> to <code>Disabled</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Save and Exit</code>
+<ul>
+<li>Hit <code>Save Changes</code></li>
+<li>Hit <code>Save Changes and Reset</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Note: If some of these options are not available in BIOS, please, boot back in Windows and check modded BIOS dump for missing changes.</strong></p>
+<h2 id="hardware-preparation">Hardware preparation</h2>
+<h3 id="wifi-and-nvme-replacement">WiFi and NVMe replacement</h3>
+<p>WiFi and NVMe replacement is easy enough for this Model. You just need to unscrew the bottom case. Check the video provided below for more information.</p>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=6TZih3m0-Ys">How to Upgrade the Razer Blade 15 RAM &amp; SSD</a></li>
+<li><a href="https://www.youtube.com/watch?v=9-ZfDNdj2WU">Razer Blade Advanced RTX 2070 SSD Replacement</a></li>
+<li><a href="https://osxlatitude.com/forums/topic/11138-inventory-of-supportedunsupported-wireless-cards-2-sierra-catalina/">INVENTORY OF SUPPORTED/UNSUPPORTED WIRELESS CARDS #2, SIERRA -&gt; CATALINA</a></li>
+</ul>
+<h3 id="optional-nvme-format-with-4k-block">(Optional) NVMe format with 4k block</h3>
+<p>This step is optional. MacOS works faster and better with NVMe with 4k blocks. Usually NVMe formatted with 512 or 512e block size for unknown reason. Maybe another Windows compatibility issue. Anyway, Windows 10 works with no issues with NVMe with 4k blocks.</p>
+<p>The best way to format NVMe drive is to boot from Linux Live USB media and use <code>smartctl</code> and <code>nvme-cli</code> tools.</p>
+<ul>
+<li>Download <a href="https://www.balena.io/etcher/">balenaEtcher</a> on Windows or macOS machine.</li>
+<li>Download <a href="https://ubuntu.com/download/desktop">Ubuntu Desktop Live Image</a> on same Windows or macOS machine.</li>
+<li>Insert USB media with at least 16Gb. Drive will be formatted and all data will be erased.</li>
+<li>Run <code>balenaEtcher</code></li>
+<li>Select image <code>Ubuntu Desktop Live Image</code> downloaded before.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/balenaEtcher_Select_Image.png" alt="balenaEtcher_Select_Image"></p>
+<ul>
+<li>Select USB media.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/balenaEtcher_Select_Media.png" alt="balenaEtcher_Select_Media"></p>
+<ul>
+<li>And press <code>Flash!</code>.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/balenaEtcher_Flash.png" alt="balenaEtcher_Flash"></p>
+<p><strong>Note: Ubuntu lacks the support by default drivers for most Broadcom WiFi modules.</strong></p>
+<p>There are 2 way to overcome this issue:</p>
+<ul>
+<li>Use <code>USB to Ethernet</code> cable.</li>
+<li>Install proprietary WiFi drivers. Follow this instruction <a href="https://help.ubuntu.com/community/WifiDocs/Driver/bcm43xx">WifiDocs/Driver/bcm43xx</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="right">Accessories</th>
+<th align="left">Description</th>
+<th align="left">Amazon URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>USB to Ethernet</code></td>
+<td align="left">Internet access</td>
+<td align="left"><a href="https://www.amazon.com/AmazonBasics-1000-Gigabit-Ethernet-Adapter/dp/B00M77HMU0/ref=sr_1_8?crid=3KJ7TSXIVKNO6&amp;keywords=apple+usb+to+ethernet+adapter&amp;qid=1561713591&amp;s=gateway&amp;sprefix=Apple+USB+to+Eth%2Caps%2C247&amp;sr=8-8">AmazonBasics USB 3.0 to 10/100/1000 Gigabit Ethernet</a></td>
+</tr>
+</tbody>
+</table>
+<p>To change NVMe drive block size</p>
+<ul>
+<li>Install a new NVMe drive in the target Razer Blade.</li>
+<li>Insert USB media with <code>Ubuntu Desktop</code>.</li>
+<li>Press <code>Power Button</code> to start computer.</li>
+<li>Press repeatedly <code>F12</code> until you <code>Boot Menu</code> will show.</li>
+<li>Select USB media with <code>Ubuntu Desktop</code>.</li>
+<li>Select <code>Try Ubuntu without installation</code></li>
+<li>When <code>Ubuntu</code> starts connect computer to the Internet. This can be done from the WiFi menu in the top right corner.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Show_Applications.png" alt="Ubuntu_Show_Applications"></p>
+<ul>
+<li>Click on the bottom left button and type <code>Terminal</code> and press <code>Enter</code>.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Terminal.png" alt="Ubuntu_Terminal"></p>
+<ul>
+<li>In <code>Terminal</code> application type</li>
+</ul>
+<pre><code>sudo apt -y install smartmontools
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Install_smartmontools.png" alt="Ubuntu_Install_smartmontools"></p>
+<ul>
+<li>and press Enter.</li>
+<li>In <code>Postfix Configuration</code> window select <code>No configuration</code> with <code>Up/Down</code> arrow keys and press <code>Enter</code>.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Install_smartmontools_postfix.png" alt="Ubuntu_Install_smartmontools_postfix"></p>
+<ul>
+<li>In <code>Terminal</code> application type</li>
+</ul>
+<pre><code>sudo apt -y install nvme-cli
+</code></pre><ul>
+<li>and press Enter.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Install_nvme_cli_fail.png" alt="Ubuntu_Install_nvme_cli_fail"></p>
+<ul>
+<li>If previous command fails with error <code>E: Unable to locate package nvme-cli</code> use this URL <a href="http://mirrors.kernel.org/ubuntu/pool/universe/n/nvme-cli/nvme-cli_0.5-1_amd64.deb">http://mirrors.kernel.org/ubuntu/pool/universe/n/nvme-cli/nvme-cli_0.5-1_amd64.deb</a> to install <code>nvme-cli</code> on Ubuntu.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Install_nvme_cli_url.png" alt="Ubuntu_Install_nvme_cli_url"></p>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Install_nvme_cli_url_open_with1.png" alt="Ubuntu_Install_nvme_cli_url_open_with1"></p>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Install_nvme_cli_url_open_with2.png" alt="Ubuntu_Install_nvme_cli_url_open_with2"></p>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Install_nvme_cli_url_open_with3.png" alt="Ubuntu_Install_nvme_cli_url_open_with3"></p>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Install_nvme_cli_url_open_with4.png" alt="Ubuntu_Install_nvme_cli_url_open_with4"></p>
+<ul>
+<li>Click on a download button on the top right <code>Firefox</code> window corner.</li>
+<li>Click on the downloaded package and click <code>Open</code>.</li>
+<li>In the installer window click <code>Install</code> button.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Install_nvme_cli_window.png" alt="Ubuntu_Install_nvme_cli_window"></p>
+<ul>
+<li>Verify your NVMe to be recognized and manage 4K blocs by typing this command in <code>Terminal</code> window</li>
+</ul>
+<pre><code>sudo smartctl -a /dev/nvme0
+</code></pre><ul>
+<li>and press <code>Enter</code></li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Run_smartctl.png" alt="Ubuntu_Run_smartctl"></p>
+<ul>
+<li>You should have two lines under <code>Supported LBA sizes</code> one with data <code>512B</code> starting with ID <code>0</code>
+one with data <code>4K</code> starting with ID <code>1</code>.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Run_smartctl_result.png" alt="Ubuntu_Run_smartctl_result"></p>
+<ul>
+<li>If <code>4K</code> is absent, NVMe does not support 4k blocks. Reboot computer and follow <strong>macOS install media preparation</strong>.</li>
+<li>Usually NVMe formatted to <code>512B</code>. And this <code>512B</code> will be marked with asterix <code>*</code> or <code>+</code>.</li>
+<li>Format the NVME with <code>4K</code> blocs with the command</li>
+</ul>
+<pre><code>sudo nvme format -l 1 /dev/nvme0
+</code></pre><ul>
+<li>and press <code>Enter</code> and follow on-screen instructions.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Ubuntu_Install_nvme_format.png" alt="Ubuntu_Install_nvme_format"></p>
+<ul>
+<li>This command will erase all the information on the NVMe drive.</li>
+<li>To verify that the LBA 4K size is properly selected re-type the <code>smartctl</code> command</li>
+</ul>
+<pre><code>sudo smartctl -a /dev/nvme0
+</code></pre><p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://help.ubuntu.com/community/WifiDocs/Driver/bcm43xx">Ubuntu WifiDocs/Driver/bcm43xx</a></li>
+<li><a href="https://github.com/linux-nvme/nvme-cli">nvme-cli</a></li>
+<li><a href="https://launchpad.net/ubuntu/+source/nvme-cli">nvme-cli package in Ubuntu</a></li>
+<li><a href="https://www.smartmontools.org">smartmontools</a></li>
+<li><a href="https://forums.macrumors.com/attachments/gilles-4k-nvme-foramt-procedure-pdf.763884/">Gilles 4k NVMe format procedure</a></li>
+</ul>
+<h3 id="optional-liquid-metal-re-paste">(Optional) Liquid Metal re-paste</h3>
+<p><strong>Be very careful and do this at your OWN RISK!</strong></p>
+<p>This step is not necessary and can be recommended only for hardcore gamers with experience of building their own rigs. Razer is already using very good thermal paste, so re-pasting thermal paste is not very useful until liquid metal is used. The <code>Grizzly Conductonaut Thermal Grease Paste</code> may be the best one. Read more about liquid metal thermal paste and all the issues it can cause before making the decision to proceed.</p>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=tGQLaFqQvOw">Razer Blade 15 Advanced Liquid Metal Repaste</a></li>
+<li><a href="https://www.youtube.com/watch?v=7xK4SjOra1E">Grizzly Liquid Metal&rsquo;d my 2018 Razer Blade 15 1060</a></li>
+</ul>
+<h2 id="macos">macOS</h2>
+<h3 id="macos-install-media-preparation">macOS install media preparation</h3>
+<p>Use you own OR borrow some friend Mac computer.</p>
+<ul>
+<li>On macOS, download <code>UniBeast</code> OR <code>TINU</code> up to your preferences.</li>
+<li>Run <code>UniBeast</code> OR <code>TINU</code> application.</li>
+<li>Follow the instruction and build macOS installation media macOS 10.14 Mojave. It is very important to build media with the latest available version of Mojave.</li>
+<li>Copy this applications and the files to the USB installation media
+<ul>
+<li><code>Clover Configurator</code></li>
+<li><code>KextBeast</code></li>
+<li><code>MaciASL</code></li>
+<li><code>iasl</code></li>
+<li>This repository ZIP archive.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://www.tonymacx86.com/threads/unibeast-install-macos-mojave-on-any-supported-intel-based-pc.259381/">UniBeast: Install macOS Mojave on Any Supported Intel-based PC</a></li>
+<li><a href="https://github.com/ITzTravelInTime/TINU">TINU</a></li>
+</ul>
+<h3 id="macos-installation">macOS installation</h3>
+<ul>
+<li>Insert the macOS USB install media.</li>
+<li>Boot/Reboot computer.</li>
+<li>Press repeatedly <code>F12</code> until you <code>Boot Menu</code> will show.</li>
+<li>Select the macOS USB install media.</li>
+<li>Open <code>Disk Utility</code> from <code>Tools</code> menu.</li>
+<li>Format NVMe to <code>APFS</code>.</li>
+<li>Follow usual macOS installation procedure.</li>
+<li>After reboot repeatedly tap <code>F12</code> again until get <code>Boot Menu</code>.</li>
+<li>Select macOS USB install media again to boot in <code>Clover</code>.</li>
+<li>In <code>Clover</code>, select NVMe drive to continue installation.</li>
+<li>Repeat this procedure again when macOS reboots the computer.</li>
+<li>Follow the usual macOS installation procedure.</li>
+<li>You can use TimeMachine Backup restore procedure during macOS installation.</li>
+</ul>
+<p><strong>Note: Do not try to connect the computer with iCloud before you generate proper SMBIOS! This step is explained in the &lsquo;iCloud. iMessages and FaceTime&rsquo; step.</strong></p>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://www.tonymacx86.com/threads/unibeast-install-macos-mojave-on-any-supported-intel-based-pc.259381/">UniBeast: Install macOS Mojave on Any Supported Intel-based PC</a></li>
+</ul>
+<h3 id="install-efi-and-extensions">Install EFI and Extensions</h3>
+<p>Once the macOS installation is finished:</p>
+<ul>
+<li>Login with the user with admin privileges: usually, the first one created during the installation procedure.</li>
+<li>Run <code>Clover Configurator</code> application from the USB installation media.</li>
+<li>From <code>Mount EFI</code> on the left side mount NVMe EFI partition.</li>
+<li>Copy this repository ZIP archive file to <code>~/Desktop/</code>.</li>
+<li>Unarchive this repository Zip archive file on <code>~/Desktop/</code>.</li>
+<li>Copy the folder <code>EFI</code> from unpacked archive to previously mounted <code>EFI</code> partition.</li>
+<li>If you have different version of Razer Blade, please remove files listed below from <code>EFI</code> partition, otherwise this can cause kernel panic or other issues
+<ul>
+<li><code>EFI/CLOVER/ACPI/patched/DSDT.aml</code></li>
+<li><code>EFI/CLOVER/ACPI/patched/SSDT-12-OptTabl.aml</code></li>
+<li><code>EFI/CLOVER/ACPI/patched/SSDT-USBX.aml</code></li>
+</ul>
+</li>
+<li>Copy all <code>.kext</code> files from the folder <code>Extensions</code> from previously unpacked archive to the <code>~/Desktop/</code> folder. Do not copy <code>CPUFriendDataProvider.kext</code> if you have different version of Razer Blade!</li>
+<li>Run <code>KextBeast.pkg</code> application from the USB installation media.</li>
+<li>Click <code>Continue</code> and click <code>Agree</code>.</li>
+<li>Select <code>/Library/Extensions</code> and click <code>Continue</code>.</li>
+<li>Click <code>Install</code>.</li>
+<li>If extensions are installed without any issues run <code>Terminal</code> application from the <code>/Applications/Utilities</code> folder.</li>
+<li>In <code>Terminal</code> application window type</li>
+</ul>
+<pre><code>sudo kextcache -i /
+</code></pre><ul>
+<li>and press <code>Enter</code>.</li>
+<li>When command <code>kextcache</code> finish execution, unmount and detach the macOS USB installation media, and reboot computer to apply new configuration.</li>
+<li>Repeatedly press <code>DEL</code> key to enter BIOS configuration menu.</li>
+<li>In BIOS, navigate to menu
+<ul>
+<li><code>Boot</code>
+<ul>
+<li>Set <code>Boot Option #1</code> to <code>UEFI OS (drive_name)</code></li>
+<li>Set <code>Boot Option #2</code> and all next <code>Boot Option #</code> to <code>Disabled</code></li>
+</ul>
+</li>
+<li><code>Save and Exit</code>
+<ul>
+<li>Hit <code>Save Changes</code></li>
+<li>Hit <code>Save Changes and Reset</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Computer should boot <code>Clover</code> and show <code>Clover Boot Menu</code>.</li>
+<li>If you have same Razer Blade Model trackpad, battery status, audio should become available.</li>
+</ul>
+<p>If you have the same Razer Blade model, you are safe to jump to step <strong>iCloud. iMessages and FaceTime</strong>. Otherwise, you need to generate custom ACPI hot patches and USB mapping specific to your Razer Blade model.</p>
+<h3 id="disable-hibernation">Disable Hibernation</h3>
+<p>Hibernation does not work correctly with the majority of hackintosh notebooks anyway.</p>
+<ul>
+<li>Run <code>Terminal</code> application from <code>/Applications/Utilities/</code> folder.</li>
+<li>To disable <code>hibernation</code> type and execute this command in <code>Terminal</code> application window</li>
+</ul>
+<pre><code>sudo pmset -a hibernatemode 0
+</code></pre><ul>
+<li>To remove <code>hibernation</code> <code>sleepimage</code> type and execute this command in <code>Terminal</code> application window</li>
+</ul>
+<pre><code>sudo rm /var/vm/sleepimage
+</code></pre><ul>
+<li>To prevent create <code>hibernation</code> <code>sleepimage</code> in future type and execute this command in <code>Terminal</code> application window</li>
+</ul>
+<pre><code>sudo mkdir /var/vm/sleepimage
+</code></pre><h3 id="tweak-energy-saver">Tweak Energy Saver</h3>
+<ul>
+<li>Open <code>System Preferences</code>.</li>
+<li>Click <code>Energy Saver</code>.</li>
+<li>Click tab <code>Power Adapter</code>.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/System_Preferences.png" alt="System_Preferences"></p>
+<ul>
+<li>Disable <code>Wake for Wi-Fi network access</code>.</li>
+<li>Disable <code>Enable Power Nap while plugged into a power adapter</code>.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/System_Preferences_Energy_Saver.png" alt="System_Preferences_Energy_Saver"></p>
+<h3 id="acpi-patching">ACPI patching</h3>
+<p>If you have a little bit different version of Razer Blade (just like mid 2019 Model OR Base Model OR different version of BIOS) the ACPI and USB patches will not be compatible with you Razer Blade!</p>
+<p>In this case, ACPI hot patches should be created from scratch.</p>
+<p>Again, it is very important to apply all BIOS patches, firmware updates before this step (!).</p>
+<p><strong>ACPI export</strong></p>
+<ul>
+<li>Reboot computer.</li>
+<li>In <code>Clover Boot Menu</code> press <code>F2</code> and <code>F4</code>.</li>
+<li>Repeat again with <code>fn</code>+<code>F2</code> and <code>fn</code>+<code>F4</code>.</li>
+<li>Select normal macOS boot.</li>
+</ul>
+<p><strong>DSDT patching for battery, trackpad</strong></p>
+<ul>
+<li>Login with the user with admin privileges: usually the first one created during installation procedure.</li>
+<li>Run <code>Clover Configurator</code> and mount NVMe <code>EFI</code> partition.</li>
+<li>Navigate to folder <code>/Volumes/EFI/EFI/CLOVER/ACPI/</code>.</li>
+<li>Copy folder <code>origin</code> to <code>Desktop</code> folder.</li>
+<li>Copy <code>MaciASL</code> from the macOS USB installation media or re-download from Internet to <code>~/Applications/</code> folder.</li>
+<li>Copy <code>iasl</code> from the macOS USB installation media or re-download from Internet to.</li>
+<li>Unpack <code>iasl.zip</code> if required.</li>
+<li>Run <code>Terminal</code> application from <code>/Applications/Utilities/</code> folder.</li>
+<li>Copy <code>iasl</code> from <code>~/Downloads/</code> folder to <code>/usr/local/bin/</code> folder with command in <code>Terminal</code> application</li>
+</ul>
+<pre><code>sudo cp ~/Downloads/iasl /usr/local/bin/
+</code></pre><ul>
+<li>Navigate to <code>~/Desktop/origin/</code> folder in <code>Terminal</code> application with command <code>cd ~/Desktop/origin/</code>.</li>
+<li>Disassembling <code>.aml</code> files with command in <code>Terminal</code> application</li>
+</ul>
+<pre><code>/usr/local/bin/iasl -da -dl DSDT.aml SSDT*.aml
+</code></pre><ul>
+<li>Run <code>MaciASL</code> application and open file <code>~/Desktop/origin/DSDT.dsl</code>.</li>
+<li>Click <code>Patch</code> button in <code>toolbar</code>.</li>
+<li>In <code>Patch</code> window on left panel scroll and find <code>[bat] Razer Blade (2014)</code> and click <code>Apply</code>. Do not close window!</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_01_BAT.png" alt="DSDT_01_BAT"></p>
+<ul>
+<li>In <code>Patch</code> window on the left panel, scroll and find <code>[gfx0] Disable/Enable on _WAK/_PTS (DSDT)</code> and click <code>Apply</code>. Do not close the window!</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_05_GFX.png" alt="DSDT_05_GFX"></p>
+<ul>
+<li>Click <code>Close</code> in <code>Patch</code> window.</li>
+<li>Click <code>Compile</code> button in <code>toolbar</code>. <code>DSDT</code> should be compiled without any issues.</li>
+<li>Do not close this window.</li>
+</ul>
+<p>Next step is hot patch DSDT for brightness settings between reboots.</p>
+<ul>
+<li>Hit <code>Command+F</code> for <code>Search</code> and search for device <code>Device (ALSD)</code>. It should look like this:</li>
+</ul>
+<pre><code>    Device (ALSD)
+    {
+        Name (_HID, &quot;ACPI0008&quot;)  // _HID: Hardware ID
+        Method (_STA, 0, NotSerialized)  // _STA: Status
+        {
+            If (LEqual (ALSE, 0x02))
+            {
+                Return (0x0B)
+            }
+
+            Return (Zero)
+        }
+
+        Method (_ALI, 0, NotSerialized)  // _ALI: Ambient Light Illuminance
+        {
+            Return (Or (ShiftLeft (LHIH, 0x08), LLOW))
+        }
+
+        Name (_ALR, Package (0x05)  // _ALR: Ambient Light Response
+        {
+            Package (0x02)
+            {
+                0x46, 
+                Zero
+            }, 
+
+            Package (0x02)
+            {
+                0x49, 
+                0x0A
+            }, 
+
+            Package (0x02)
+            {
+                0x55, 
+                0x50
+            }, 
+
+            Package (0x02)
+            {
+                0x64, 
+                0x012C
+            }, 
+
+            Package (0x02)
+            {
+                0x96, 
+                0x03E8
+            }
+        })
+    }
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_ALS0_01.png" alt="DSDT_ALS0_01"></p>
+<ul>
+<li>And replace this device <code>Device (ALSD)</code> description with:</li>
+</ul>
+<pre><code>    Device (_SB.ALS0)
+    {
+        Name (_HID, &quot;ACPI0008&quot;)  // _HID: Hardware ID
+        Name (_CID, &quot;smc-als&quot;)  // _STA: Status
+        Name (_ALI, 300)  // _ALI: Ambient Light Illuminance
+        Name (_ALR, Package ()  // _ALR: Ambient Light Response
+        {
+            Package () { 100, 300 },
+        })
+    }
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_ALS0_02.png" alt="DSDT_ALS0_02"></p>
+<p>Next step is hot patch DSDT for trackpad.</p>
+<ul>
+<li>Mount <code>IORegistryExplorer.dmg</code> from folder <code>Tools</code>.</li>
+<li>Right click on <code>IORegistryExplorer.app</code> application icon.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/IORegistryExplorer_Open_Right_Click.png" alt="IORegistryExplorer_Open_Right_Click"></p>
+<ul>
+<li>Open <code>IORegistryExplorer.app</code> application with <code>Open</code> option in right click menu.</li>
+<li>Thera are possibility macOS will ask for admin password.</li>
+<li>Search for <code>TPD0</code>. It can be very different for different computer but for Razer Blade notebooks is <code>TPD0</code>.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/IORegistryExplorer_TPD0.png" alt="IORegistryExplorer_TPD0"></p>
+<ul>
+<li>Open IOInterruptSpecifiers.</li>
+<li>Write down the first two numbers from the <code>Value</code> column as <code>0xXX</code> (In this case for Razer Blade Advanced early 2019 <code>APIC</code> pin number is <code>0x5a</code>. This <code>APIC</code> pin number will be required during <code>Trackpad GPIO Pinning</code> procedure.</li>
+<li>Switch back to <code>MaciASL</code> application with opened file <code>~/Desktop/origin/DSDT.dsl</code>.</li>
+<li>Hit <code>Command+F</code> for <code>Search</code> and search for method <code>SSCN</code> in scope <code>Scope (_SB.PCI0.I2C0)</code> lines like below.</li>
+</ul>
+<pre><code>Method (SSCN, 0, NotSerialized)
+{
+    Return (PKG3 (SSH0, SSL0, SSD0))
+}
+
+Method (FMCN, 0, NotSerialized)
+{
+    Return (PKG3 (FMH0, FML0, FMD0))
+}
+</code></pre><ul>
+<li>Copy this block</li>
+<li>Rename this methods to something like this:</li>
+</ul>
+<pre><code>Method (_SCN, 0, NotSerialized)
+{
+    Return (PKG3 (SSH0, SSL0, SSD0))
+}
+
+Method (_MCN, 0, NotSerialized)
+{
+    Return (PKG3 (FMH0, FML0, FMD0))
+}
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_11_SSCN_FMCN.png" alt="DSDT_11_SSCN_FMCN"></p>
+<ul>
+<li>Find a code like this:</li>
+</ul>
+<pre><code>Scope (_SB.PCI0.I2C0)
+    {
+        Name (I2CN, Zero)
+        Name (I2CX, Zero)
+        Method (_INI, 0, NotSerialized)  // _INI: Initialize
+        {
+            Store (SDS0, I2CN)
+            Store (Zero, I2CX)
+        }
+        
+        Device (TPD0)
+</code></pre><ul>
+<li>Above line <code>Device (TPD0)</code> paste the previously copied code. The result should look like this:</li>
+</ul>
+<pre><code>Scope (_SB.PCI0.I2C0)
+    {
+        Name (I2CN, Zero)
+        Name (I2CX, Zero)
+        Method (_INI, 0, NotSerialized)  // _INI: Initialize
+        {
+            Store (SDS0, I2CN)
+            Store (Zero, I2CX)
+        }
+
+        Method (SSCN, 0, NotSerialized)
+        {
+            Return (PKG3 (SSH0, SSL0, SSD0))
+        }
+
+        Method (FMCN, 0, NotSerialized)
+        {
+            Return (PKG3 (FMH0, FML0, FMD0))
+        }
+        
+        Device (TPD0)
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_12_SSCN_FMCN.png" alt="DSDT_12_SSCN_FMCN"></p>
+<ul>
+<li>Scroll down to method <code>_CRS</code> for scope <code>_SB.PCI0.I2C0</code>. It should look like this:</li>
+</ul>
+<pre><code>Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
+{
+    If (LLess (OSYS, 0x07DC))
+    {
+        Return (SBFI)
+    }
+
+    If (LEqual (TPDM, Zero))
+    {
+        Return (ConcatenateResTemplate (I2CM (I2CX, BADR, SPED), SBFG))
+    }
+
+    Return (ConcatenateResTemplate (I2CM (I2CX, BADR, SPED), SBFI))
+}
+</code></pre><ul>
+<li>And replace with:</li>
+</ul>
+<pre><code>Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
+{
+    Return (ConcatenateResTemplate (I2CM (I2CX, BADR, SPED), SBFG))
+}
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_13__CRS.png" alt="DSDT_13__CRS"></p>
+<ul>
+<li>Click <code>Compile</code> button in <code>toolbar</code>. <code>DSDT</code> should be complied without any issues.</li>
+<li>Choose <code>Save</code> from <code>File</code> menu.</li>
+<li>Choose <code>Save As…</code> from <code>File</code> menu.</li>
+<li>Down below in <code>Save</code> window select <code>ACPI Machine Language Binary</code> from <code>File Format:</code> menu.</li>
+<li>Save this file as <code>DSDT.aml</code>. <code>MaciASL</code> application will recommend the file name automatically.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_Save_As_2.png" alt="DSDT_Save_As_2"></p>
+<ul>
+<li>Copy the newly created file <code>DSDT.aml</code> to <code>/Volumes/EFI/EFI/CLOVER/ACPI/patched/</code></li>
+<li>Restart computer. After restart you will get working trackpad in <code>Polling Mode</code>.</li>
+</ul>
+<p><strong>(Optional) Trackpad GPIO Pinning</strong></p>
+<p>This step is optional but highly recommended.</p>
+<p>Before you begin make sure you computer&rsquo;s Platform Controller Hub is Cannon Point-H (Coffee Lake CPU). For other platforms tables will be different. In this case please check with <a href="https://voodooi2c.github.io/#GPIO%20Pinning/GPIO%20Pinning">GPIO Pinning</a> documentation.</p>
+<ul>
+<li>Check with <code>APIC</code> pin number saved in previous procedure (In this case for Razer Blade Advanced early 2019 <code>APIC</code> pin number is <code>0x5a</code>.</li>
+<li>Write down the label of form <code>GPP_XYY_IRQ</code> by searching up the <code>APIC</code> pin number on <a href="https://github.com/coreboot/coreboot/blob/master/src/soc/intel/cannonlake/include/soc/gpio_defs_cnp_h.h#L42">Cannon Point-H Labels</a>. For <code>0x5a</code> it will be <code>GPP_C18_IRQ</code>.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_GPIO_Pin_01.png" alt="DSDT_GPIO_Pin_01"></p>
+<ul>
+<li>Write down the decimal <code>GPIO</code> pin number by searching the label on <a href="https://github.com/coreboot/coreboot/blob/master/src/soc/intel/cannonlake/include/soc/gpio_soc_defs_cnp_h.h#L40">Cannon Point-H Decimal Pin Numbers</a>. For <code>GPP_C18</code> it will be <code>69</code>.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_GPIO_Pin_02.png" alt="DSDT_GPIO_Pin_02"></p>
+<ul>
+<li>Write down the <code>CHIPSET_GPP</code> by searching the label <code>GPP_X</code> on <a href="https://github.com/coolstar/VoodooGPIO/blob/master/VoodooGPIO/CannonLake-H/VoodooGPIOCannonLakeH.hpp#L414">Cannon Point-H Chipset GPP</a>. For <code>GPP_C18</code> label will be <code>GPP_C</code> and <code>CHIPSET_GPP</code> will be:</li>
+</ul>
+<pre><code>CNL_GPP(0, 51, 74, 64),             /* GPP_C */
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_GPIO_Pin_03.png" alt="DSDT_GPIO_Pin_03"></p>
+<ul>
+<li><code>Chipset_GPP</code> format is <code>CHIPSET_GPP(num, base, end, gpio_base)</code></li>
+<li>Calculate a usable GPIO pin by taking the <code>decimal pin number - base + gpio_base</code>.</li>
+<li>For Razer Blade Advanced early 2019 is:</li>
+</ul>
+<pre><code>69-51+64 = 82
+</code></pre><ul>
+<li>Use <a href="https://www.binaryhexconverter.com/decimal-to-hex-converter">Decimal to Hexadecimal Converter</a> to convert decimal to hexadecimal. In this case it will be <code>52</code>.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_GPIO_Pin_10_Decimal_to_Hexadecimal_Converter.png" alt="DSDT_GPIO_Pin_10_Decimal_to_Hexadecimal_Converter"></p>
+<ul>
+<li>Now find something that looks like this under <code>Device (TPD0)</code></li>
+</ul>
+<pre><code>Name (SBFG, ResourceTemplate ()
+{
+GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
+    &quot;\\_SB.PCI0.GPI0&quot;, 0x00, ResourceConsumer, ,
+    )
+    {   // Pin list
+	0x0000
+    }
+})
+</code></pre><ul>
+<li>And replace the pin with the calculated GPIO pin XX. In this case it will be <code>52</code>.</li>
+</ul>
+<pre><code>Name (SBFG, ResourceTemplate ()
+{
+GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
+    &quot;\\_SB.PCI0.GPI0&quot;, 0x00, ResourceConsumer, ,
+    )
+    {   // Pin list
+	0x52
+    }
+})
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_GPIO_Pin_11.png" alt="DSDT_GPIO_Pin_11"></p>
+<ul>
+<li>Find the method <code>_CRS</code> from before and change to</li>
+</ul>
+<pre><code>Method (_CRS, 0, NotSerialized) // _CRS: Current Resource Settings
+{
+    Return (ConcatenateResTemplate(SBFB, SBFG))
+}
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_GPIO_Pin_05__CRS.png" alt="DSDT_GPIO_Pin_05__CRS"></p>
+<ul>
+<li>Click <code>Compile</code> button in <code>toolbar</code>. <code>DSDT</code> should be complied without any issues.</li>
+<li>Choose <code>Save</code> from <code>File</code> menu.</li>
+<li>Choose <code>Save As…</code> from <code>File</code> menu.</li>
+<li>Down below in <code>Save</code> window select <code>ACPI Machine Language Binary</code> from <code>File Format:</code> menu.</li>
+<li>Save this file as <code>DSDT.aml</code>. <code>MaciASL</code> application will recommend the file name automatically.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/DSDT_Save_As_2.png" alt="DSDT_Save_As_2"></p>
+<ul>
+<li>Copy the newly created file <code>DSDT.aml</code> to <code>/Volumes/EFI/EFI/CLOVER/ACPI/patched/</code></li>
+</ul>
+<p>Next step is hot patch ACPI to disable Nvidia GPU in macOS for saving battery and decreasing the overall heat.</p>
+<p><strong>Nvidia GPU disable</strong></p>
+<ul>
+<li>Open <code>SSDT-12-OptTabl.dsl</code> with <code>MaciASL</code> application.</li>
+<li>Find this header:</li>
+</ul>
+<pre><code>\_SB.PCI0.PEG0.PEGP and expand it, click on _OFF
+</code></pre><ul>
+<li>Find this line of code:</li>
+</ul>
+<pre><code>Method (_OFF, 0, Serialized) // _OFF: Power Off
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/SSDT-12-OptTabl_01.png" alt="SSDT-12-OptTabl_01"></p>
+<ul>
+<li>Above the code, paste this line of code:</li>
+</ul>
+<pre><code>Method (_INI) {_OFF() } // added to call _OFF
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/SSDT-12-OptTabl_02.png" alt="SSDT-12-OptTabl_02"></p>
+<ul>
+<li>Once that is pasted in, click on the <code>Patch</code> button in <code>toolbar</code> and copy and paste this code into the <code>Patch</code> window:</li>
+</ul>
+<pre><code>into method label _INI parent_label \_SB.PCI0.GFX0 insert
+
+begin
+
+//added to turn nvidia/radeon off\n
+
+External(\_SB.PCI0.PEG0.PEGP._OFF, MethodObj)\n
+
+\n
+
+end;
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/SSDT-12-OptTabl_03.png" alt="SSDT-12-OptTabl_03"></p>
+<ul>
+<li>Close the <code>Patch</code> window.</li>
+<li>Click <code>Compile</code> button in <code>toolbar</code>.</li>
+<li>If <code>SSDT-12-OptTabl.dsl</code> is compiled without any issues skip to next patch. If compilation failed with error:</li>
+</ul>
+<pre><code>[Unknown ASL Compiler exception ID] (TGPC [Integer])
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/SSDT-12-OptTabl_04.png" alt="SSDT-12-OptTabl_04"></p>
+<ul>
+<li>Hit <code>Command+F</code> for <code>Search</code>, search for a line like below and delete this line.</li>
+</ul>
+<pre><code>External (_SB_.PCI0.PEG0.TGPC, IntObj)    // (from opcode)
+</code></pre><p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/SSDT-12-OptTabl_05.png" alt="SSDT-12-OptTabl_05"></p>
+<ul>
+<li>Now, <code>SSDT-12-OptTabl.dsl</code> should be compiled without any issues.</li>
+<li>Click <code>Patch</code> button in <code>toolbar</code>.</li>
+<li>Click <code>Close</code> in <code>Patch</code> window.</li>
+<li>Click <code>Compile</code> button in <code>toolbar</code>. <code>SSDT-12-OptTabl.dsl</code> should be compiled without any issues.</li>
+<li>Choose <code>Save</code> from <code>File</code> menu.</li>
+<li>Choose <code>Save As…</code> from <code>File</code> menu.</li>
+<li>Down below in <code>Save</code> window select <code>ACPI Machine Language Binary</code> from <code>File Format:</code> menu.</li>
+<li>Save this file as <code>SSDT-12-OptTabl.aml</code>. <code>MaciASL</code> application will recommend this file name automatically.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/SSDT-12-OptTabl_Save_As_2.png" alt="SSDT-12-OptTabl_Save_As_2"></p>
+<ul>
+<li>Copy newly created file <code>SSDT-12-OptTabl.aml</code> to <code>/Volumes/EFI/EFI/CLOVER/ACPI/patched/</code></li>
+</ul>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://github.com/alexandred/VoodooI2C/issues/171#issuecomment-485423537">Slave address not acknowledged in new ELAN devices</a></li>
+<li><a href="https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/">Patching LAPTOP DSDT/SSDTs</a></li>
+<li><a href="https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/">Native Power Management for Laptops</a></li>
+<li><a href="https://www.tonymacx86.com/threads/quick-guide-to-generate-a-ssdt-for-cpu-power-management.177456/">Quick Guide to Generate a SSDT for CPU Power Management</a></li>
+<li><a href="https://www.tonymacx86.com/threads/guide-generate-ssdt-for-coffee-lake-cpu.238311/">Generate SSDT For Coffee Lake CPU</a></li>
+<li><a href="https://www.tonymacx86.com/threads/guide-how-to-make-a-copy-of-ioreg.58368/">IORegistryExplorer</a></li>
+<li><a href="https://voodooi2c.github.io/#GPIO%20Pinning/GPIO%20Pinning">GPIO Pinning</a></li>
+<li><a href="https://github.com/coreboot/coreboot/blob/master/src/soc/intel/cannonlake/include/soc/gpio_defs_cnp_h.h">Cannon Point-H Labels</a></li>
+<li><a href="https://github.com/coreboot/coreboot/blob/master/src/soc/intel/cannonlake/include/soc/gpio_soc_defs_cnp_h.h">Cannon Point-H Decimal Pin Numbers</a></li>
+<li><a href="https://github.com/coolstar/VoodooGPIO/blob/master/VoodooGPIO/CannonLake-H/VoodooGPIOCannonLakeH.hpp">Cannon Point-H Chipset GPP</a></li>
+</ul>
+<h3 id="usb-mapping">USB mapping</h3>
+<p><strong>Required Accessories</strong></p>
+<table>
+<thead>
+<tr>
+<th align="right">Device</th>
+<th align="left">USB version</th>
+<th align="left">USB connection type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">Any</td>
+<td align="left">2.0</td>
+<td align="left">USB-A</td>
+</tr>
+<tr>
+<td align="right">Any</td>
+<td align="left">3.0</td>
+<td align="left">USB-A</td>
+</tr>
+<tr>
+<td align="right">Any</td>
+<td align="left">3.x</td>
+<td align="left">USB-C</td>
+</tr>
+<tr>
+<td align="right">Cable</td>
+<td align="left">USB-A to USB-C cable <a href="https://www.amazon.com/AmazonBasics-Type-C-Gen1-Female-Adapter/dp/B01GGKYXVE/ref=pd_hpb_a2a_sims_6/130-2479265-2893400?_encoding=UTF8&amp;pd_rd_i=B01GGKYYT0&amp;pd_rd_r=54b9f737-919c-11e9-b9d7-6915ce2a8dc3&amp;pd_rd_w=j9bw6&amp;pd_rd_wg=IVvh1&amp;pf_rd_p=bfc589eb-d865-496f-a10b-5e00902c2113&amp;pf_rd_r=G68JVK6HBAFKEDA75MYY&amp;refRID=G68JVK6HBAFKEDA75MYY&amp;th=1">Amazon</a></td>
+<td align="left">USB-C</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Download <code>USBMap</code> repository.
+<ul>
+<li><a href="https://github.com/corpnewt/USBMap">USBMap repository URL</a></li>
+<li>Read <a href="https://github.com/corpnewt/USBMap/blob/master/README.md">USBMap README</a> carefully.</li>
+</ul>
+</li>
+<li>Open <code>USBMap</code> folder in Terminal.app OR iTerm.app if you prefer this one.</li>
+<li>Make <code>USBMap.command</code> executable with <code>chmod +x USBMap.command</code>.</li>
+<li>Detach all the USB devices from the Razer Blade.</li>
+<li>Run <code>USBMap.command</code> with <code>./USBMap.command</code>.</li>
+</ul>
+<pre><code>  #######################################################
+ #                      USBMap                         #
+#######################################################
+
+Plist:          USB.plist
+UIA Boot Args:  None
+USBInjectAll:   Not Loaded - NVRAM boot-args WILL NOT WORK
+AptioMemoryFix: Loaded
+
+NVRAM Arg Options:
+  E. Apply Exclusion-Arg.txt
+  H. Exclude HSxx Ports (-uia_exclude_hs)
+  S. Exclude SSxx Ports (-uia_exclude_ss)
+  C. Clear Exclusions
+
+R.  Remove USB.plist from Scripts Folder
+T.  Reset Settings to Defaults
+P.  Edit Plist &amp; Create SSDT/Kext
+D.  Discover Ports
+U.  Validate USB Power Settings
+Q.  Quit
+
+Please select an option:
+</code></pre><ul>
+<li>Press <code>U</code> to <code>Validate USB Power Settings</code>.</li>
+<li>Command will show something like this:</li>
+</ul>
+<pre><code>  #######################################################
+ #           Validating USB Power Settings             #
+#######################################################
+
+Checking EC
+ - EC is properly setup
+Checking USBX requirements
+ - MacBookPro15,2 not found in IOUSBHostFamily.kext - checking for USBX
+ --&gt; USBX device found: USBX@0
+
+EC Setup Properly:   True
+USBX Setup Properly: True
+
+Press [enter] to return
+</code></pre><ul>
+<li>If command asks required confirm to install <code>USBX</code>.</li>
+<li>Press <code>Q</code> to go back to the main screen.</li>
+<li>Press <code>P</code> to get to the <code>Edit Plist &amp; Create SSDT/Kext</code> screen.</li>
+<li>Press <code>T</code> to get the list of USB types. It will be useful.</li>
+</ul>
+<pre><code>  #######################################################
+ #                     USB Types                       #
+#######################################################
+
+0: Type A connector
+1: Mini-AB connector
+2: ExpressCard
+3: USB 3 Standard-A connector
+4: USB 3 Standard-B connector
+5: USB 3 Micro-B connector
+6: USB 3 Micro-AB connector
+7: USB 3 Power-B connector
+8: Type C connector - USB2-only
+9: Type C connector - USB2 and SS with Switch
+10: Type C connector - USB2 and SS without Switch
+11 - 254: Reserved
+255: Proprietary connector
+
+Per the ACPI 6.2 Spec.
+
+Press [enter] to return
+</code></pre><ul>
+<li>Press <code>Enter</code> to return to the <code>Edit Plist &amp; Create SSDT/Kext</code> screen.</li>
+<li>Press <code>M</code> to return to the <code>Main</code> screen.</li>
+<li>Press <code>D</code> to <code>Discover Ports</code>.</li>
+<li>If all USB devices are removed and detached properly, <code>USBMap</code> will show the list of internal USB devices such as Bluetooth, Integrated Camera, Razer Blade.</li>
+</ul>
+<pre><code> #######################################################
+ #                  Detecting Ports                    #
+#######################################################
+
+1. HS01 - Controller XHC
+2. HS02 - Controller XHC
+3. HS03 - Controller XHC
+4. HS05 - Controller XHC
+    - BCM20702A0
+5. HS06 - Controller XHC
+6. HS07 - Controller XHC
+    - Integrated Camera
+7. HS08 - Controller XHC
+    - Razer Blade
+8. HS09 - Controller XHC
+9. HS10 - Controller XHC
+10. HS11 - Controller XHC
+11. HS13 - Controller XHC
+12. HS14 - Controller XHC
+13. SS01 - Controller XHC
+14. SS02 - Controller XHC
+15. SS03 - Controller XHC
+
+Populated:  XHC:3
+
+Press Q then [enter] to stop
+
+Waiting 5 seconds:
+</code></pre><ul>
+<li>Write down the USB port identifications for the internal USB devices. This information will be required later to properly setup the USB type to properly enable a sleep mode. For RBA early 2019, it will be like this:
+<ul>
+<li>HS05 - Controller XHC - Bluetooth</li>
+<li>HS07 - Controller XHC - Integrated Camera</li>
+<li>HS08 - Controller XHC - Razer Blade</li>
+</ul>
+</li>
+<li>You will need to mark these ports like <code>255</code> later.</li>
+<li>Detect properly <code>USB 2.0</code> ports.
+<ul>
+<li>Insert in every <code>USB-A</code> port for 15-20sec and detach <code>USB 2.0</code> (!) device. Command will highlight the newly detected ports with colour.</li>
+<li>Write down the ports number.</li>
+</ul>
+</li>
+<li>Detect properly <code>USB 3.0</code> ports.
+<ul>
+<li>Insert in every <code>USB-A</code> port for 15-20sec and detach <code>USB 3.0 or 3.1</code> (!) device. Command will highlight the newly detected ports with colour.</li>
+<li>Write down the ports number.</li>
+</ul>
+</li>
+<li>Detect properly <code>USB-C</code> ports.
+<ul>
+<li>Insert <code>USB-C</code> device into <code>USB-C</code> port for 15-20sec and detach. Command will highlight the newly detected ports with colour.</li>
+<li>Write down the ports number.</li>
+<li>Insert <code>USB-A 2.0</code> device into <code>USB-C</code> port with <code>USB-A to USB-C</code> cable for 15-20sec and detach. Command will highlight the newly detected ports with colour.</li>
+<li>Write down the ports number.</li>
+</ul>
+</li>
+<li>When ports are detected, press <code>Q</code> to go back to the <code>Main</code> screen.</li>
+<li>In the <code>Main</code> screen, press <code>P</code> to open <code>Edit Plist &amp; Create SSDT/Kext</code> screen.</li>
+<li>All ports will be automatically marked like <code>Type 3</code> ports.</li>
+<li>Mark internal ports like <code>Type 255</code>. This is very important to enable a sleep mode. Without this computer will wake up every 20-40secs even with the lid closed.</li>
+<li>Here, there are tips how to do this:</li>
+</ul>
+<pre><code>Select ports to toggle with comma-delimited lists (eg. 1,2,3,4,5)
+Change types using this formula T:1,2,3,4,5:t where t is the type
+Set custom names using this formula C:1:Name - Name = None to clear
+</code></pre><ul>
+<li>You can do this with a command. For example:</li>
+</ul>
+<pre><code>T:4,6,7:255
+</code></pre><ul>
+<li>Next you need to mark properly <code>Type</code> for <code>USB-C</code>.
+<ul>
+<li>In my case <code>SS03</code> is <code>Type 9</code>.</li>
+<li>And <code>SS03</code> is <code>USB 2.0</code> <code>Type 8</code>.</li>
+</ul>
+</li>
+<li>Next is to build and install <code>USBMap.kext</code>.</li>
+<li>Press <code>K</code> to execute <code>Build USBMap.kext</code>.</li>
+</ul>
+<pre><code>  #######################################################
+ #               Creating USBMap.kext                  #
+#######################################################
+
+Loading plist
+Generating Info.plist
+Writing to USBMap.kext
+ - Created USBMap.kext!
+Checking EC
+ - EC is properly setup
+Checking USBX requirements
+ - MacBookPro15,2 not found in IOUSBHostFamily.kext - checking for USBX
+ --&gt; USBX device found: USBX@0
+
+Created the following file:
+
+USBMap.kext
+
+Copy automatically to booted EFI? (y/n):
+</code></pre><ul>
+<li>Confirm to install <code>USBMap.kext</code> automatically.</li>
+<li>Press <code>Q</code> to <code>Quit</code> command.</li>
+<li>Reboot computer.</li>
+</ul>
+<p>Verify configuration by inserting <code>USB 2.0</code> and <code>USB 3.0</code> and <code>USB-C</code> devices just like during detecting procedure. Also, close the lid and turn over notebook. After 20-60sec, depending on the current load, fans should stop rotating. Wait for another 3-5min. They shouldn&rsquo;t start spinning again. If they start and stop after 10-20sec, you have done something wrong and need to start the procedure again.</p>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://github.com/corpnewt/USBMap">USBMap</a></li>
+<li><a href="https://www.tonymacx86.com/threads/a-beginners-guide-to-creating-a-custom-usb-ssdt.272505/">A Beginner&rsquo;s Guide to Creating a Custom USB SSDT</a></li>
+<li><a href="https://www.tonymacx86.com/threads/guide-creating-a-custom-ssdt-for-usbinjectall-kext.211311/">Creating a Custom SSDT for USBInjectAll.kext</a></li>
+</ul>
+<h3 id="icloud-imessages-and-facetime">iCloud. iMessages and FaceTime</h3>
+<p>Follow the instruction in the article <a href="https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/">An iDiot&rsquo;s Guide To iMessage</a>.</p>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/">An iDiot&rsquo;s Guide To iMessage</a></li>
+</ul>
+<h3 id="filevault">FileVault</h3>
+<p>This step is optional, but highly recommended from the security standpoint.</p>
+<ul>
+<li>Make sure you have full TimeMachine or clone backup. Some mistakes done during this procedure can make your drive and the data inaccessible!</li>
+<li>Make sure you have prepared macOS installation media in the worst case scenario.</li>
+<li>Do recommend to use
+<ul>
+<li><a href="https://support.apple.com/en-us/HT201250">Apple TimeMachine</a> backup or</li>
+<li><a href="https://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html">SuperDuper</a></li>
+</ul>
+</li>
+<li>Make sure the required <code>drivers</code> are installed.
+<ul>
+<li><code>AptioInputFix-64</code> for Bluetooth keyboard and mouse.</li>
+<li><code>AppleKeyAggregator-64</code> for PS/2 keyboard and mouse.</li>
+</ul>
+</li>
+<li>Make sure the <code>Preboot</code> volume is not hidden in <code>Clover Configurator</code>.
+<ul>
+<li>Open <code>/Volumes/EFI/EFI/CLOVER/config.plist</code> with <code>Clover configurator</code> application.</li>
+<li>Open <code>Gui</code> section.</li>
+<li>Remove <code>Preboot</code> volume from <code>Hide Volume</code> in the top right corner.</li>
+<li>Hit <code>Command+S</code> to save configuration.</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Clover_Preboot.png" alt="Clover_Preboot"></p>
+<ul>
+<li>Open <code>System Preferences…</code> and <code>Security &amp; Privacy</code> and <code>FileVault</code> tab.
+<ul>
+<li>Click lock to unlock <code>System Preferences</code>.</li>
+<li>Click <code>Turn On FileVault…</code>.</li>
+<li>It will take time… Depending on the drive size and a number of files, this can take up to 12h. So, be patient.</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/System_Preferences_FileVault_Locked.png" alt="System_Preferences_FileVault_Locked"></p>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/System_Preferences_FileVault_Unlocked.png" alt="System_Preferences_FileVault_Unlocked"></p>
+<ul>
+<li>Reboot computer.</li>
+<li>At the <code>Clover</code> screen, make sure you select the <code>FileVault</code> <code>Preboot</code> option of NVMe drive.</li>
+<li>Login prompt should appear.</li>
+<li>Keyboard should work without any issues.</li>
+<li>If keyboard does not work, maybe, additional drivers are required. Boot from macOS USB installation media and fix <code>Clover</code> boot configuration.</li>
+<li>Enter credentials.</li>
+<li>macOS should continue to boot.</li>
+</ul>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://davejansen.com/turning-on-filevault-on-your-hackintosh/">Turning on FileVault on your Hackintosh</a></li>
+</ul>
+<h2 id="power-management">Power Management</h2>
+<p><strong>BIOS tweak</strong></p>
+<ul>
+<li>Reboot computer.</li>
+<li>Repeatedly press <code>DEL</code> key to enter BIOS configuration menu.</li>
+<li>In BIOS navigate to menu
+<ul>
+<li><code>Advanced</code>
+<ul>
+<li><code>Power &amp; Performance</code></li>
+<li>Enable <code>Intel(R) Speed Shift Technology</code>
+<ul>
+<li><code>CPU - Power Management Control</code>
+<ul>
+<li>Enable <code>Intel(R) SpeedStep(tm)</code></li>
+<li>Enable <code>Intel(R) Speed Shift Technology</code></li>
+</ul>
+</li>
+<li><code>CPU Lock Configuration</code>
+<ul>
+<li>Disable <code>CFG Lock</code></li>
+<li>Disable <code>Overclocking Lock</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Memory</code>
+<ul>
+<li>Set <code>Memory Profile</code> to the best for installed memory. Usually something like <code>XMP profile 1</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Save and Exit</code>
+<ul>
+<li>Hit <code>Save Changes</code></li>
+<li>Hit <code>Save Changes and Reset</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>CPUFriendDataProvider</strong></p>
+<ul>
+<li>Login with the user with admin privileges: usually, the first one created during the installation procedure.</li>
+<li>Download <a href="https://github.com/stevezhengshiqi/one-key-cpufriend">One Key CPUFriend</a> Github repository ZIP archive.</li>
+<li>Unpack downloaded ZIP archive.</li>
+<li>Run <code>Terminal</code> application.</li>
+<li>Change folder in <code>Terminal</code> application to unpack ZIP archive folder with command like this:</li>
+</ul>
+<pre><code>cd ~/Download/one-key-cpufriend-master
+</code></pre><ul>
+<li>In <code>Terminal</code> applications window, type the execute command:</li>
+</ul>
+<pre><code>./one-key-cpufriend.sh
+</code></pre><ul>
+<li>Command will show something like this:</li>
+</ul>
+<pre><code>-----------------------------------------
+|****** Choose Low Frequency Mode ******|
+-----------------------------------------
+(1) Remain the same (1200/1300mhz)
+(2) 800mhz
+(3) Customize
+Which option you want to choose? (1/2/3)
+</code></pre><ul>
+<li>For most cases, option <code>2</code> will be optimal. Type <code>2</code> and press <code>Enter</code>.</li>
+<li>Command will show something like this:</li>
+</ul>
+<pre><code>----------------------------------------
+| Choose Energy Performance Preference |
+----------------------------------------
+(1) Max Power Saving
+(2) Balance Power (Default)
+(3) Balance performance
+(4) Performance
+Which mode is your favourite? (1/2/3/4)
+</code></pre><ul>
+<li>Option <code>2</code> is recommended for most cases.</li>
+<li>Type your option and press <code>Enter</code></li>
+<li>Command will ask for password. Type your password and press <code>Enter</code>.</li>
+<li>Command will generate two customised macOS Extensions (kext&rsquo;s) on <code>Desktop</code> folder.</li>
+<li>Run <code>KextBeast.pkg</code> application.</li>
+<li>Click <code>Continue</code> and click <code>Agree</code>.</li>
+<li>Select <code>/Library/Extensions</code> and click <code>Continue</code>.</li>
+<li>Click <code>Install</code>.</li>
+<li>If extensions are installed without any issues, run <code>Terminal</code> application from <code>/Applications/Utilities</code> folder.</li>
+<li>In <code>Terminal</code> application window, type:</li>
+</ul>
+<pre><code>sudo kextcache -i /
+</code></pre><ul>
+<li>And press <code>Enter</code>.</li>
+<li>When command <code>kextcache</code> finish the execution unmount, detach the macOS USB installation media and reboot computer to apply new configuration.</li>
+<li>Reboot computer.</li>
+<li>With next boot macOS will enable granular and precise power management.</li>
+</ul>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://www.tonymacx86.com/threads/skylake-hwp-enable.214915/">Skylake HWP Enable</a></li>
+<li><a href="https://www.insanelymac.com/forum/topic/321021-guide-hwpintel-speed-shift-enable-with-full-power-management/">HWP(Intel Speed Shift) enable with full power management</a></li>
+<li><a href="https://github.com/daliansky/XiaoMi-Pro/issues/22">XiaoMi-Pro CPU Power management</a></li>
+</ul>
+<h2 id="undervolting">Undervolting</h2>
+<p>There are several tools for Windows for undervolting and overclocking CPU and GPU. Just like:</p>
+<ul>
+<li><a href="https://downloadcenter.intel.com/download/24075/Intel-Extreme-Tuning-Utility-Intel-XTU-">Intel Extreme Tuning Utility</a></li>
+<li><a href="https://www.msi.com/page/afterburner">MSI Afterburner</a></li>
+<li><a href="https://www.techpowerup.com/download/techpowerup-throttlestop/">ThrottleStop</a></li>
+</ul>
+<p>With macOS, it is a different story. There are a few tools for macOS for undervolting, but they require additional macOS Extensions (kext&rsquo;s). Often, they are not free or not very well supported.</p>
+<ul>
+<li><a href="https://volta.garymathews.com">Volta</a></li>
+<li><a href="https://github.com/sicreative/VoltageShift">VoltageShift</a></li>
+</ul>
+<p>So, I decided to go Rogue and do undervolt with BIOS. Tools like <code>XTU</code> provide better control, but I need a solution that will work both in Windows and Debian Linux and macOS.</p>
+<p>AMI BIOS provides a lot of different tools for undervolting and overclocking.</p>
+<p>The most interesting and easy to use are:</p>
+<ul>
+<li><code>Processor</code>
+<ul>
+<li><code>Core Voltage Offset</code></li>
+</ul>
+</li>
+<li><code>GT</code>
+<ul>
+<li><code>GT Voltage Offset</code></li>
+<li><code>GTU Voltage Offset</code></li>
+</ul>
+</li>
+<li><code>Uncore</code>
+<ul>
+<li><code>Uncore Voltage Offset</code></li>
+</ul>
+</li>
+</ul>
+<p>To apply configuration:</p>
+<ul>
+<li>Reboot computer.</li>
+<li>Repeatedly press <code>DEL</code> key to enter BIOS configuration menu.</li>
+<li>In BIOS navigate to menu
+<ul>
+<li><code>Advanced</code>
+<ul>
+<li><code>Processor</code>
+<ul>
+<li>Set <code>Core Voltage Offset</code> to 100.</li>
+<li>Set <code>Offset Prefix</code> to <code>-</code> (!).</li>
+</ul>
+</li>
+<li><code>GT</code>
+<ul>
+<li>Set <code>GT Voltage Offset</code> to 100.</li>
+<li>Set <code>Offset Prefix</code> to <code>-</code> (!).</li>
+<li>Set <code>GTU Voltage Offset</code> to 100.</li>
+<li>Set <code>Offset Prefix</code> to <code>-</code> (!).</li>
+</ul>
+</li>
+<li><code>Uncore</code>
+<ul>
+<li>Set <code>Uncore Voltage Offset</code> to 60.</li>
+<li>Set <code>Offset Prefix</code> to <code>-</code> (!).</li>
+</ul>
+</li>
+<li><code>Memory</code>
+<ul>
+<li>Set <code>Memory Profile</code> to the best for installed memory. Usually something like <code>XMP profile 1</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Save and Exit</code>
+<ul>
+<li>Hit <code>Save Changes</code></li>
+<li>Hit <code>Save Changes and Reset</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Boot in macOS or Windows.</li>
+<li>Download <a href="https://www.mersenne.org/download/">Prime95</a> application.</li>
+<li>Run <code>Torture Test...</code> from <code>Options</code> menu for at least 1h.</li>
+<li>If the system works stably, repeat all the steps and incremental increase undervolting for -5. It is better to keep undervolting for <code>Processor</code> and <code>GT/GTU</code> on the same level. Repeat again <code>Torture Test...</code>. If the system is unstable under <code>Torture Test...</code>, freezes or reboots, revert back to the previous working configuration.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="right">Option</th>
+<th align="right">Configuration start undervolting</th>
+<th align="right">Recommended step</th>
+<th align="right">My stable working configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>Processor Core Voltage Offset</code></td>
+<td align="right">-100</td>
+<td align="right">-5</td>
+<td align="right">-140</td>
+</tr>
+<tr>
+<td align="right"><code>GT Core Voltage Offset</code></td>
+<td align="right">-100</td>
+<td align="right">-5</td>
+<td align="right">-140</td>
+</tr>
+<tr>
+<td align="right"><code>GTU Core Voltage Offset</code></td>
+<td align="right">-100</td>
+<td align="right">-5</td>
+<td align="right">-140</td>
+</tr>
+<tr>
+<td align="right"><code>Uncore Voltage Offset</code></td>
+<td align="right">-60</td>
+<td align="right">-5</td>
+<td align="right">-120</td>
+</tr>
+</tbody>
+</table>
+<p>CPU limitations can be very different even in same series. So, do not use my configuration blindly.</p>
+<p>BIOS has many additional configurations for undervolting and overclocking, just like TDP (Thermal Design Power), but this requires extensive knowledge in CPU/Chipset/etc. and power management. This is not a part of this documentation. For more information, check the links provided at the end of the document.</p>
+<p><strong>Note: It looks like the mid 2019 Razer Blade Advanced has been undervolted from factory! But there are still room for improvement.</strong></p>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=O5CvK7i9a_Y">Razer Blade 2017 Ultimate CPU GPU Optimization - Unleashed Performance - BIOS Unlock</a></li>
+<li><a href="https://www.youtube.com/watch?v=rJSeG_Pb3bs">Razer Blade 2018 Thermal Testing - Overclocking and Undervolting</a></li>
+<li><a href="https://www.youtube.com/watch?v=ooET-Nk62VY">Razer blade 15 undervolting with ThrottleStop</a></li>
+<li><a href="https://www.notebookcheck.net/Intel-Extreme-Tuning-Utility-XTU-Undervolting-Guide.272120.0.html">Intel Extreme Tuning Utility (XTU) Undervolting Guide</a></li>
+</ul>
+<h2 id="nvidia-bios-flashing">Nvidia BIOS flashing</h2>
+<p>Razer Blade Advanced mid 2019 has very few changes in comparison to the previous early 2019 model.</p>
+<ul>
+<li>Better screen refresh rate.</li>
+<li>Can be packed with i7 9750H CPU for extra money.</li>
+</ul>
+<p>The biggest disadvantage is 80w 2080 Max-Q instead of 90w in the previous model. This is a huge difference for general performance. Check article <a href="https://www.theeverydayenthusiast.com/home/comparison-80w-vs-90w-2080-max-q">Comparison: 80w vs 90w RTX 2080 Max-Q</a>.</p>
+<ul>
+<li>Reboot computer.</li>
+<li>Select Windows 10 partition in <code>Clover</code>.</li>
+<li>Download this repository ZIP archive.</li>
+<li>Unpack archive.</li>
+<li>Backup Nvidia BIOS with <code>GPU-Z</code> application from <code>Tools\Nvidia\</code> repository folder (!).</li>
+<li>Open <code>cmd.exe</code> with admin privileges.</li>
+<li>In <code>cmd.exe</code> window change folder to <code>BIOS_mod\Nvidia_2080_Max-Q_BIOS_mod\</code> repository folder.</li>
+<li>To apply 90w TDP type in <code>cmd.exe</code> window command</li>
+</ul>
+<pre><code>nvflash64.exe -6 Nvidia_2080_Max-Q_90w.rom
+</code></pre><ul>
+<li>And press <code>Enter</code>.</li>
+<li>Press <code>Y</code> for the warning(s).</li>
+<li>Reboot computer.</li>
+</ul>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/razer/comments/c3doo2/razer_blade_pro_17_2019_review/">Razer Blade Pro 17 (2019) Review</a></li>
+<li><a href="https://www.theeverydayenthusiast.com/home/comparison-80w-vs-90w-2080-max-q">Comparison: 80w vs 90w RTX 2080 Max-Q</a></li>
+<li><a href="https://www.notebookcheck.net/So-much-better-than-before-Razer-Blade-Pro-17-Laptop-Review.424150.0.html">So much better than before: Razer Blade Pro 17 Laptop Review</a></li>
+<li><a href="https://www.reddit.com/r/razer/comments/c9i1x6/razer_blade_advanced_oled_80w_2080_maxq/">Razer Blade Advanced OLED 80w 2080 Max-q</a></li>
+<li><a href="https://www.techpowerup.com/vgabios/212123/212123">Razer RTX 2080 8 GB BIOS</a></li>
+</ul>
+<h2 id="razer-chroma">Razer Chroma</h2>
+<p>Razer Chroma support for Razer Blade notebooks and the latest Razer devices has not been implemented for macOS yet. I suppose, it will never be implemented.</p>
+<p>Thanks to <a href="https://github.com/boo-dev/osx-razer-blade">osx-razer-blade</a> project, I&rsquo;ve already had enough information, so I am working on cli tool to control Razer Blade keyboard and logo Chroma lighting.</p>
+<h2 id="windows">Windows</h2>
+<h3 id="nvme-partition">NVMe partition</h3>
+<ul>
+<li>Open <code>Disk Utility</code></li>
+<li>Select <code>Show All Devices</code> from <code>View</code> menu.</li>
+<li>Select the NVMe drive on left pane.</li>
+<li>Click <code>Partition</code> button at the top toolbar.</li>
+<li>Click continue with partition.</li>
+<li>Add a new partition by clicking the <code>[+]</code> button under the circle.</li>
+<li>Give it a name and desired size (minimum 50Gb required for Windows 10).</li>
+<li>Set drive format to <code>ExFat</code>.</li>
+<li>Click <code>Apply</code>.</li>
+</ul>
+<h3 id="windows-installation-media-preparation">Windows installation media preparation</h3>
+<ul>
+<li>Download Windows 10 ISO image.</li>
+<li>Open <a href="https://www.microsoft.com/en-us/software-download/windows10ISO">Download Windows 10 Disc Image (ISO File) URL</a> in Safari. It better to download ISO image on macOS. Microsoft detects OS and prevent download ISO image on Windows machine. It can be override by browser <code>User-Agent</code> replacement but still easier todo this on macOS.</li>
+<li>From <code>Select Edition</code> menu select <code>Windows 10 May 2019 Update</code> (!). <code>Windows 10 October 2019 Update</code> ISO image have issues Microsoft still have not fixed.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Windows_Download1.png" alt="Windows_Download1"></p>
+<ul>
+<li>Click <code>Confirm</code>.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Windows_Download2.png" alt="Windows_Download2"></p>
+<ul>
+<li>From <code>Select the product language</code> menu select preferred language.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Windows_Download3.png" alt="Windows_Download3"></p>
+<ul>
+<li>Click <code>Confirm</code>.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Windows_Download4.png" alt="Windows_Download4"></p>
+<ul>
+<li>Click <code>64-bit Download</code> button.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Windows_Download5.png" alt="Windows_Download5"></p>
+<ul>
+<li>Download <a href="https://unetbootin.github.io">UNetbootin</a> tool.</li>
+<li>Plug a USB media into Mac.</li>
+<li>Open <code>Disk Utility</code>.</li>
+<li>Select the USB media from the left panel and click on <code>Info</code> button. Write down the device name.</li>
+<li>Run <code>UNetbootin</code></li>
+<li>Select the <code>Diskimage</code> radio button, click <code>…</code> to select a Windows 10 ISO image.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Windows_unetbootin1.png" alt="Windows_unetbootin1"></p>
+<ul>
+<li>Choose <code>Type</code> as the USB media and select the device name of USB media.</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/Windows_unetbootin2.png" alt="Windows_unetbootin2"></p>
+<ul>
+<li>Click <code>OK</code> to start burning to the USB media.</li>
+</ul>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://www.top-password.com/blog/create-windows-10-bootable-usb-from-iso-on-mac/">Create Windows 10 bootable USB from ISO on Mac without BootCamp</a></li>
+</ul>
+<h3 id="windows-installation">Windows installation</h3>
+<ul>
+<li>Insert Windows 10 USB installation media.</li>
+<li>Reboot the computer.</li>
+<li>Press repeatedly <code>F12</code> until you <code>Boot Menu</code> will show.</li>
+<li>Select the USB installation media with Windows 10.</li>
+<li>Follow the usual Windows 10 installation procedure.</li>
+</ul>
+<p><strong>Note: Be careful and select right partition created before for Windows 10. Otherwise, you can destroy the macOS installation.</strong></p>
+<p><strong>Useful information</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=OtHZueEZe9s">How to Reinstall/Clean Install Windows 10</a></li>
+</ul>
+<h3 id="clover-boot-fix">Clover Boot fix</h3>
+<p>To fix dual-booting hackintosh, rename bootmgfw.efi to bootmgfw-orig.efi causing Clover to become unblocked. Add the tag <code>-orig</code> to the name so that it’s still a recognizable file and is shown in the Windows EFI partition for booting in the <code>Clover Boot</code> loader menu.</p>
+<p>To rename <code>bootmgfw.efi</code></p>
+<ul>
+<li>Boot off macOS installation media.</li>
+<li>Boot macOS.</li>
+<li>Open <code>Clover Configurator</code> application.</li>
+<li>Select <code>Mount EFI</code> on the left column.</li>
+<li>Click <code>Mount Partition</code> for the drive where macOS and Windows is installed on.</li>
+<li>Click <code>Open Partition</code>.</li>
+<li>Navigate to <code>EFI/Microsoft/Boot/</code>.</li>
+<li>Rename <code>bootmgfw.efi</code> to <code>bootmgfw-orig.efi</code>.</li>
+<li>Restart.</li>
+<li>UEFI OS (drive_name) should be an available boot device.</li>
+</ul>
+<h4 id="optional-override-windows-boot-manager">(Optional) Override Windows Boot Manager</h4>
+<p>If for some reason the UEFI OS (drive_name) isn’t shown as an available boot device, there is a way to override <code>Windows Boot Manager</code> and have it redirected to <code>Clover</code>.</p>
+<ul>
+<li>Boot off macOS installation media.</li>
+<li>Boot macOS.</li>
+<li>Open <code>Clover Configurator</code> application.</li>
+<li>Select <code>Mount EFI</code> on left column.</li>
+<li>Click <code>Mount Partition</code> for the drive where macOS and Windows is installed on.</li>
+<li>Click <code>Open Partition</code>.</li>
+<li>Open the <code>EFI</code> partition and navigate to <code>EFI/BOOT/</code></li>
+<li>Copy <code>BOOTX64.efi</code>.</li>
+<li>Navigate to <code>EFI/Windows/Boot</code>.</li>
+<li>Paste <code>BOOTX64.efi</code>.</li>
+<li>Rename <code>BOOTX64.efi</code> to <code>bootmgfw.efi</code>.</li>
+<li>Restart.</li>
+<li>Now <code>Windows Boot Manager</code> will redirects to <code>Clover</code> instead of booting Windows.</li>
+</ul>
+<p><strong>Note: Very often, with cumulative and security updates Windows 10 will place new <code>bootmgfw.efi</code> in <code>EFI/Microsoft/Boot/</code>. You can notice this by two Windows boot options in <code>Clover</code> boot screen. Just remove old <code>bootmgfw-orig.efi</code> and rename new <code>bootmgfw.efi</code> to  <code>bootmgfw-orig.efi</code>.</strong></p>
+<p><strong>Useful information</strong></p>
+<p><a href="https://hackintosher.com/guides/hackintosh-dual-boot-windows-10-and-macos-high-sierra/">Hackintosh Dual Boot Windows 10 and macOS High Sierra</a></p>
+<h2 id="known-issues-and-limitations">Known Issues and Limitations</h2>
+<p><strong>Limitations</strong></p>
+<ul>
+<li>Nvidia Web Drivers are not available for macOS 10.14 Mojave. Nvidia does not want to implement support for Apple 2D/3D rendering framework Metal and does not want to share access for Nvidia drivers source code for Apple. So, currently no support for Nvidia GPU for macOS 10.14 Mojave is available. It&rsquo;s not a problem for me because I&rsquo;m using Windows 10 partition for gaming and Debian Linux partition to run the ML tasks overnight.
+<ul>
+<li>HDMI and DisplayPort ports both are connected directly to Nvidia GPU and will not work in macOS 10.14 Mojave.</li>
+<li>USB-C to HDMI should work without any issues.</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/raw/master/images/HDMI_DP.png" alt="HDMI_DP"></p>
+<ul>
+<li>Windows Hello camera is not supported in macOS.</li>
+<li>Not all sensors are supported by VirtualSMC.</li>
+</ul>
+<p><strong>Issues</strong></p>
+<ul>
+<li>Sometimes, the screen does not wake up when you open the lid after the computer was in a sleep mode. You need to close and open the lid again. This issue has appeared after the latest BIOS update. Although annoying, it is not that important.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>It&rsquo;s a pretty good laptop with a way better keyboard than 2016-2019y MacBook Pro. It is a solid workstation and an extremely good gaming machine. It has easy to upgrade NVMe and RAM and WiFi modules. This Model supports NVMe up to 2Tb and RAM up to 64Gb.</p>
+<p>Major disadvantages are:</p>
+<ul>
+<li>PC trackpads still cannot match with MacBook Pro. This one is good. It is much better than most PC notebooks have, but still not even close to MacBook Pro.</li>
+<li>The screen is rather mediocre in comparison to MacBook Pro. 144Hz is good for gaming. If you are working with text a lot just like me, maybe, it will be better to get 4K panel. For content creators, it is mandatory to get the 4K panel.</li>
+</ul>
+<p>P.S. Apple, please fix the keyboard and release a real Pro MacBook. Just take a look on Razer Blade Advanced as that is a good place for starting to design a new MacBook Pro.</p>
+<h2 id="additional-information">Additional Information</h2>
+<ul>
+<li><a href="https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/">An iDiot&rsquo;s Guide To Lilu and its Plug-ins</a></li>
+<li><a href="https://www.tonymacx86.com/threads/need-help-razer-blade-advanced-2019-trackpad-issue.273575/">Razer Blade Advanced (2019) trackpad issue</a></li>
+<li><a href="https://www.tonymacx86.com/threads/guide-razer-blade-15-2018-detailed-install-guide-high-sierra-10-13-6-17g2208-17g5019.264017/">Razer Blade 15 (2018) Detailed Install Guide High Sierra 10.13.6 (17G2208-17G5019)</a></li>
+<li><a href="https://www.tonymacx86.com/threads/guide-razer-blade-2017.242627/">Razer Blade 2017</a></li>
+<li><a href="https://www.tonymacx86.com/threads/unibeast-install-macos-mojave-on-any-supported-intel-based-pc.259381/">UniBeast: Install macOS Mojave on Any Supported Intel-based PC</a></li>
+<li><a href="https://davejansen.com/keeping-your-hackintosh-up-to-date/">Keeping your Hackintosh up-to-date, my method</a></li>
+<li><a href="https://hackintosher.com/guides/hackintosh-mojave-10-14-5-update-guide/">Hackintosh Mojave 10.14.5 Update Guide</a></li>
+<li><a href="https://github.com/corpnewt/Hackintosh-Guide/blob/master/config.plist-per-hardware/coffee-lake.md">corpnewt/Hackintosh-Guide</a></li>
+<li><a href="https://www.reddit.com/r/hackintosh/comments/c0y312/antihackintosh_buyers_guide/">Anti-Hackintosh Buyers Guide</a></li>
+<li><a href="https://osxlatitude.com/forums/topic/11138-inventory-of-supportedunsupported-wireless-cards-2-sierra-catalina/">INVENTORY OF SUPPORTED/UNSUPPORTED WIRELESS CARDS #2, SIERRA -&gt; CATALINA</a></li>
+</ul>
+<p><strong>Community</strong></p>
+<ul>
+<li><a href="https://www.insanelymac.com">InsanelyMac</a></li>
+<li><a href="https://www.tonymacx86.com">tonymacx86</a></li>
+<li><a href="https://osxlatitude.com">OSXL</a></li>
+<li><a href="https://www.reddit.com/r/hackintosh/">Reddit Hackintosh</a></li>
+</ul>
+<h2 id="credits">Credits</h2>
+<ul>
+<li><a href="https://www.apple.com">Apple</a> for macOS. It is still the best OS</li>
+<li><a href="http://netkas.org">netkas</a> for the original idea of creating a software SMC emulator</li>
+<li><a href="https://github.com/RehabMan">RehabMan</a> for Laptop-DSDT-Patch, OS-X-Clover-Laptop-Config, OS-X-MaciASL-patchmatic, and more. You are a legend!</li>
+<li><a href="https://github.com/acidanthera">Acidanthera</a> for VirtualSMC</li>
+<li><a href="https://github.com/alexandred">Alexandre Daoud</a> for VoodooI2C</li>
+<li><a href="https://github.com/ben9923">Ben Raz</a> for help with VoodooI2C and trackpad</li>
+<li><a href="https://github.com/williambj1">Bat.bat</a> for help with VoodooI2C and trackpad</li>
+<li><a href="https://github.com/stevezhengshiqi">Steve Zheng</a> for one-key-cpufriend</li>
+<li><a href="https://www.tonymacx86.com/members/vettz500.291395/">vettz500</a> for the incredibly useful information about RBA 2018</li>
+<li><a href="https://github.com/kprinssu">Kishor Prins</a> and <a href="https://github.com/boo-dev">Boo</a> for osx-razer-blade</li>
+<li>Additional big thanks go to all the contributors and researchers involved in Hackintosh development!</li>
+</ul>
+<h2 id="todo">TODO</h2>
+<ul>
+<li><input disabled="" type="checkbox">Add BIOS pre and post update procedure</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://srivatsams.github.io/tags/hackintosh">Hackintosh</a></span><span class="tag"><a href="https://srivatsams.github.io/tags/razer-blade-15">Razer Blade 15</a></span>
+  				</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://srivatsams.github.io/">Srivatsa Subramanya</a></span>
+            
+            <span> <a href="https://srivatsams.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Made with &#10084; <a href=""></a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

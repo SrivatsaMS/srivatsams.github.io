@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MATLAB on Life in a puzzling Universe.</title>
+    <link>https://srivatsams.github.io/tags/matlab/</link>
+    <description>Recent content in MATLAB on Life in a puzzling Universe.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Srivatsa Subramanya</copyright>
+    <lastBuildDate>Fri, 06 Dec 2019 20:14:03 -0700</lastBuildDate>
+    
+	<atom:link href="https://srivatsams.github.io/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to add MATLAB and Mathematica Codes to LaTeX</title>
+      <link>https://srivatsams.github.io/tutorials/how_to_add_matlab_and_mathematica_codes_to_latex/</link>
+      <pubDate>Fri, 06 Dec 2019 20:14:03 -0700</pubDate>
+      
+      <guid>https://srivatsams.github.io/tutorials/how_to_add_matlab_and_mathematica_codes_to_latex/</guid>
+      <description>It can be done by two ways. One by using ‘Listings’ package and other is by using ‘Listing with matlab-prettifier’. I prefer first method.
+Place your .m (Matlab script) files in the same directory as .tex file.
+ For MATLAB  1. First method \documentclass{article} \usepackage[T1]{fontenc} \usepackage{bigfoot} % to allow verbatim in footnote \usepackage[numbered,framed]{matlab-prettifier} \usepackage{filecontents} \let\ph\mlplaceholder % shorter macro \lstMakeShortInline&amp;#34; \lstset{ style = Matlab-editor, basicstyle = \mlttfamily, escapechar = &amp;#34;, mlshowsectionrules = true, } \begin{document} \lstlistoflistings %Creates the table of content for your codes.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Life in a puzzling Universe.</title>
+    <link>https://srivatsams.github.io/tags/</link>
+    <description>Recent content in Tags on Life in a puzzling Universe.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Srivatsa Subramanya</copyright>
+    <lastBuildDate>Mon, 25 May 2020 15:42:15 -0700</lastBuildDate>
+    
+	<atom:link href="https://srivatsams.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hackintosh</title>
+      <link>https://srivatsams.github.io/tags/hackintosh/</link>
+      <pubDate>Mon, 25 May 2020 15:42:15 -0700</pubDate>
+      
+      <guid>https://srivatsams.github.io/tags/hackintosh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Razer Blade 15</title>
+      <link>https://srivatsams.github.io/tags/razer-blade-15/</link>
+      <pubDate>Mon, 25 May 2020 15:42:15 -0700</pubDate>
+      
+      <guid>https://srivatsams.github.io/tags/razer-blade-15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macOS</title>
+      <link>https://srivatsams.github.io/tags/macos/</link>
+      <pubDate>Mon, 25 May 2020 15:01:32 -0700</pubDate>
+      
+      <guid>https://srivatsams.github.io/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HOW-TO</title>
+      <link>https://srivatsams.github.io/tags/how-to/</link>
+      <pubDate>Fri, 06 Dec 2019 20:14:03 -0700</pubDate>
+      
+      <guid>https://srivatsams.github.io/tags/how-to/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>latex</title>
+      <link>https://srivatsams.github.io/tags/latex/</link>
+      <pubDate>Fri, 06 Dec 2019 20:14:03 -0700</pubDate>
+      
+      <guid>https://srivatsams.github.io/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathematica</title>
+      <link>https://srivatsams.github.io/tags/mathematica/</link>
+      <pubDate>Fri, 06 Dec 2019 20:14:03 -0700</pubDate>
+      
+      <guid>https://srivatsams.github.io/tags/mathematica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MATLAB</title>
+      <link>https://srivatsams.github.io/tags/matlab/</link>
+      <pubDate>Fri, 06 Dec 2019 20:14:03 -0700</pubDate>
+      
+      <guid>https://srivatsams.github.io/tags/matlab/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

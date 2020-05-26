@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Life in a puzzling Universe.</title>
+    <link>https://srivatsams.github.io/blogs/</link>
+    <description>Recent content in Blogs on Life in a puzzling Universe.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Srivatsa Subramanya</copyright>
+    <lastBuildDate>Mon, 25 May 2020 15:42:15 -0700</lastBuildDate>
+    
+	<atom:link href="https://srivatsams.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Clover Hackintosh Guide</title>
+      <link>https://srivatsams.github.io/blogs/clover_hackintosh_guide/</link>
+      <pubDate>Mon, 25 May 2020 15:42:15 -0700</pubDate>
+      
+      <guid>https://srivatsams.github.io/blogs/clover_hackintosh_guide/</guid>
+      <description>Razer Blade Advanced early 2019 macOS 10.14 Hackintosh Note: I&amp;rsquo;AM NOT RESPONSIBLE IF YOU MESS UP YOUR COMPUTER USING THIS GUIDE!
+Intro I have been using Apple hardware and software since 1996 for macOS has been the best OS to meet my needs. My first computer was a PowerBook 150. Since then, I used mostly Apple mobile solutions: PowerBook G3, PowerBook Titanium, bunch of MacBook Pro 13&amp;rdquo; and 15&amp;rdquo;. But, I&amp;rsquo;m really dissatisfied with the latest MacBook Pro 2017 as it has a useless keyboard with arrow keys designed for Tinker Bell and zero ability to upgrade up to 32Gb RAM back then in 2017.</description>
+    </item>
+    
+    <item>
+      <title>Razer Blade 15 Advanced Hackintosh Resources</title>
+      <link>https://srivatsams.github.io/blogs/razer_blade_15_advanced_hackintosh_resources/</link>
+      <pubDate>Mon, 25 May 2020 15:01:32 -0700</pubDate>
+      
+      <guid>https://srivatsams.github.io/blogs/razer_blade_15_advanced_hackintosh_resources/</guid>
+      <description>Main Clover Guide to follow – STONEVIL_GUIDE
+https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh
+OpenCore Guide for 9th gen coffee lake CPUs
+https://khronokernel.github.io/Opencore-Vanilla-Laptop-Guide/config.plist/coffee-lake-9th-gen.html
+Reference -
+ Reddit post URL (https://www.reddit.com/r/hackintosh/comments/dzrunr/razer_blade_advanced_mid_2019_macbook_pro/) Get his EFI and Extensions for validation. EFI link - https://mega.nz/file/xoZiDYjY#rD3FC57Qziq0Hf7CzBgI8EbBejskUS7EeFPWix1nRwk Extensions link - https://mega.nz/file/cpQnSKqR#1uC8ZT-6isHS7fi0gLhz4TjlNaXuHcP2aAPyBK0OTzw  </description>
+    </item>
+    
+  </channel>
+</rss>
